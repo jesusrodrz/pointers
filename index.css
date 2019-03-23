@@ -89,10 +89,19 @@
 }
 .pointer__link {
   text-decoration: none;
-  color: inherit;
+  transition: all ease-in-out 0.4s;
+  color: rgb(96, 96, 96);
+  display: block;
+  padding: 0.6em;
+}
+.pointer__link:hover {
+  color: red;
+  transform: scale(1.1);
 }
 .pointer__nav {
   grid-area: nav;
+  display: flex;
+  justify-content: space-around;
 }
 .pointer__img {
   display: block;
@@ -110,4 +119,10 @@
   background-color: transparent;
   cursor: pointer;
   outline: none;
+}
+
+.icon {
+  font-size: 0.8em;
+  transition: all ease-in-out 0.4s;
+  transform: scale(1);
 }
