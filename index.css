@@ -50,6 +50,10 @@ body {
   background-size: contain;
   background-clip: padding-box;
   outline: none;
+  transition: all ease-in-out 0.3s;
+}
+.pointer__icon.unactive {
+  transform: scale(0.00001) rotate(45deg);
 }
 .pointer__icon:hover {
   transform: scale(1.1) rotate(45deg);
@@ -57,7 +61,7 @@ body {
 .pointer__body {
   background-color: white;
   padding: 1.2em;
-  transform: scale(0.00001);
+  transform: scale(0.00000001);
   transition: all ease-in-out 0.5s;
   transform-origin: top left;
   position: relative;
