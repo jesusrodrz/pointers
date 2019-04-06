@@ -1,265 +1,61 @@
-<!DOCTYPE html>
-  include pointers.pug
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(rel="stylesheet", href="index.css")
-    link(rel="stylesheet", href="style.css")
-    title Pointers
-  body
-    header.header
-      img.header__img(src='img/header.jpg')
-    -
-      var difusor = {
-        title: 'Difusor',
-        src: 'https://ucce7f66b4c323cd4b61ab4714eb.previews.dropboxusercontent.com/p/thumb/AAYS2HicEBMJqYFpJO2c14WlYa08G8SEsYv6y2WREkdiMiWomOyB3VP3hzU0BVZwAE9jHDKbCB8d9pCOO1oM59OZ0f7e3b9o9bzVsWNCSztr37FTABq6I-t7iPAM7_d8XoRau7oYhGoU0XfAAkPmbGSKXUqPQZTDp6u-M1XxfHJsUOn2DQq46WALBCA64glIY0uxEXDNXcTL8Tc39VsUaDD1xdprhlma9vPyMjGWeGEzDJxfIRBnC5ncUf9nOsd267NrKTWSviBaQ1zhgzr7UHPsZeYO5Hlc4nggInmbO0Vf-hC5G6iyn9WzKqsw8ARfESmMHq8Yq8Kmv4NwQjvWzhG6CAIK-jzb1SbXm1TO_UnxMTgJZxzdKXu3lrvUaZBBSuQ/p.jpeg?size=1600x1200&size_mode=3'
-      }
-      var aromAmbiental = {
-        title: 'Aromatizante Ambiental',
-        //- title: 'Aromatizante Ambiental',
-        src: 'https://ucce7f66b4c323cd4b61ab4714eb.previews.dropboxusercontent.com/p/thumb/AAYS2HicEBMJqYFpJO2c14WlYa08G8SEsYv6y2WREkdiMiWomOyB3VP3hzU0BVZwAE9jHDKbCB8d9pCOO1oM59OZ0f7e3b9o9bzVsWNCSztr37FTABq6I-t7iPAM7_d8XoRau7oYhGoU0XfAAkPmbGSKXUqPQZTDp6u-M1XxfHJsUOn2DQq46WALBCA64glIY0uxEXDNXcTL8Tc39VsUaDD1xdprhlma9vPyMjGWeGEzDJxfIRBnC5ncUf9nOsd267NrKTWSviBaQ1zhgzr7UHPsZeYO5Hlc4nggInmbO0Vf-hC5G6iyn9WzKqsw8ARfESmMHq8Yq8Kmv4NwQjvWzhG6CAIK-jzb1SbXm1TO_UnxMTgJZxzdKXu3lrvUaZBBSuQ/p.jpeg?size=1600x1200&size_mode=3'
-        //- src: 'https://uc59ec4e37cab06cbe68f72c3a0c.previews.dropboxusercontent.com/p/thumb/AAYmVQY3ZAiWnjoa3sp34--kfYcC3S4hh0kmExEvgU6W2yNonXTL2K3pqrsBm7tf8dCr-89m1Gv1JcHPr4FBkdFQINbdcDHDylE2gCyLnRJJzvQC8b6k30opksXf1HYzBACvat1yx5vk137DrxKQPiWHDVC1Q1PEjtjrMunoKmQKG_jucifOpzxEjg7kjKnprkhlfv2pROyP9Psw0fsxnxmWnAXoyH1cTcfhletPh3KtmHwqvsSrrnSHnH5Djl3mD9IPpNsRf2hJQHFmIaZeqhQ2h5umPswwfPRFepRO9GNiCl_YZFu3TfmvsyaOK2nK_T1HbHTZlXf9xA1NtkrPNAvw5Uyu5jHpSvBQGjYBGzzjaswbv10NPKuOAxD7TB8Hu0w/p.jpeg?size_mode=5'
-      }
-      var aromBlancos = {
-        title: 'Aromatizante para blancos',
-        src: 'https://uc6f14f14d4416e7b632e549381c.previews.dropboxusercontent.com/p/thumb/AAazj0J8HPWckjXxEDKIMciURd_lzrYw2cr4VQuULo2eqZCbdvUirDgwhZFcxlahbg_AT1Z39Bkv9Du-uklQwMqqZsFaGIowe1d-C-KmkgfAUjYIUGlFTOnbyLhj1KFp3OQlEdNV4RcoKkim4xQEt_BDP7W1cAQs8tCzaBFCR6cZhJTp-RvGh8b4r3K-RxJSCnZHq_ZGToe01h1U3mEfzia0zPbe4eWW3xsA_w-ev40wNawYqd-NO4D5wCitili7-jceTu-VYMIgiIoPBDHrNNCB5hWBwWQK-3YYj1J0FjNqGvVV9HFGvrbcEUV3l3E47PVXmpR0sziIooQEzNTtLyqN9xEk4E4DIITit2iQpgxRhDTOtTCP-sRX8lAc-4ypB_U/p.jpeg?size=1600x1200&size_mode=3'
-      }
-      var pointers = [
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Baño 1'
+    var next = 1
+    var prev = 7
+block main
+  -
+    var pointer = {
+      render: 'img/render1.jpeg',
+      pointers: [
         {
-          render: 'https://ucbc70940b0f1c71998375612d9c.previews.dropboxusercontent.com/p/thumb/AAZCnRNt8mJs9QVOh6wTj28W62a7Kk3J7qku4FNzd12VclG2gbwcGrMTOH7Kr9XmTQIU0wgbUiipqjl9wOyRTdWDaDC4tTzUzFAn5gOoTncBQfz2-nIIdG25Thr8o_1gDCVFmbWXY6222doW8SDpDxwhMqkI3uqycevwQxy58RbGz8xD0gdfDAx0PsLwiLRjxCRIpkXOupfbVjBjfbda4BZ5-cCmXRXb_8MVOXs-cNO3eyTkDSs-t75hVRHubN-Z2-BjLP5XN7gVG35cdKHgQEJpySrXzp308bijaUzQg4HS_NREGZcd5ak3uvDhdho8BxvJo5xpIifzWLhCB74FFDeh_dOvpEGONnjquyvfEzPrz-IshGLur0eq8R-apH8C6a8/p.jpeg?size_mode=5',
-          pointers: [
+          y: 35,
+          x:3
+        },
+        {
+          y:50,
+          x:30
+        },
+        {
+          y:80,
+          x:40
+        },
+        {
+          y:30,
+          x:80
+        },
+        {
+          y:15,
+          x:65,
+          variant: true,
+          items:[
             {
-              y: 35,
-              x:3
+              title: 'Jabón Artesanal',
+              src: 'img/prodruct1.jpeg'
             },
             {
-              y:50,
-              x:30
-            },
-            {
-              y:80,
-              x:40
-            },
-            {
-              y:30,
-              x:80
-            },
-            {
-              y:15,
-              x:65,
-              variant: true,
-              items:[
-                {
-                  title: 'Jabón Artesanal',
-                  src: 'https://uc81eec0ed6424f7868a1d405d53.previews.dropboxusercontent.com/p/thumb/AAbE9Ihje2aZkGzgJlg8fgQDnsnXKvpU3T9dG1tOzT765YHjvRqI5Jg7OLxcV6HkmzfeVkGqHth8yw5AEBhk0tARDed4FTtbFBYy1apKyXDqubhDZuTwc5IynXDrNzUcOlzCTNFAtQPjAiZRWu2w2BjIlhWtbI3kP7dbXGfNRwjfn5wZMgtiGVJArmem1mr3xA0CjoigV9Mwm8sCqUg3Vj9Zb_roUyKNDKiRyPSNpmKWKK7bbv3F6HdfUgwz-0UZG7DZyrCq1WU4l4fBrVjzrOOo3CffNuYMXXduUgyOmsl-kNVEyvaDc1S-L7uP93cruzhjwNPLS88OzhCIfmA9zNsEvRltRkuIxZ22iVwtWAUT_wsiXupySlYN8Eoa60XUdzQ/p.jpeg?size_mode=5'
-                },
-                {
-                  title: 'Difusor',
-                  src: 'https://ucce7f66b4c323cd4b61ab4714eb.previews.dropboxusercontent.com/p/thumb/AAYS2HicEBMJqYFpJO2c14WlYa08G8SEsYv6y2WREkdiMiWomOyB3VP3hzU0BVZwAE9jHDKbCB8d9pCOO1oM59OZ0f7e3b9o9bzVsWNCSztr37FTABq6I-t7iPAM7_d8XoRau7oYhGoU0XfAAkPmbGSKXUqPQZTDp6u-M1XxfHJsUOn2DQq46WALBCA64glIY0uxEXDNXcTL8Tc39VsUaDD1xdprhlma9vPyMjGWeGEzDJxfIRBnC5ncUf9nOsd267NrKTWSviBaQ1zhgzr7UHPsZeYO5Hlc4nggInmbO0Vf-hC5G6iyn9WzKqsw8ARfESmMHq8Yq8Kmv4NwQjvWzhG6CAIK-jzb1SbXm1TO_UnxMTgJZxzdKXu3lrvUaZBBSuQ/p.jpeg?size=1600x1200&size_mode=3'
-                }
-              ]
-            },
-            {
-              y:28,
-              x:66,
-              variant: true,
-              items:[
-                {
-                  title: 'Sales para tina',
-                  src: 'https://uc51f17476ada41226f748b8db93.previews.dropboxusercontent.com/p/thumb/AAbWHuh-KlWMheDVseCCYk84V7H51AjQ_QUffMOE_B1zkKMs7_sOPPZnwD3uSs5XHNdr5SehZOAdkWDuWr5PzAIF3jNM3Ewry8sBaPaz5FnLZP_NDkEs7xJmIBXfYTLZmMskBRbSI3jAgFVns-VW2WYP-H_lECZQakRJ4TsDTUpop0hhYSdBehGuIt57yDaPzc6PwuBiMZUSP-qdJrszbLyMwDxi9To1ZhOJrSOdP7oBe7NgU7d7uq5RBHeWoOGIkaez9Saw425SSYWRCVyiz4KB0V2YoFrswY-2J-op3m3I_T5bkj0YRIcOzWiDJM1QAKuBTAUoquRmXW3QWfgH4NIsirtYQCUkapZx0w_FBXGMsVKRNwR1oY_y33lgukT7TdI/p.jpeg?size=1600x1200&size_mode=3'
-                },
-                {
-                  title: 'Sphera para tina',
-                  src: 'https://uca9e5e9a7396f4d93b4e80a7b2d.previews.dropboxusercontent.com/p/thumb/AAa9GdpGupfd9TxaeMSH8E8V-Ce4SbEEfWTD0cGMHomVdRWLMagZZlro-S2EHqmwQNlj1EMX-0ALiWWk15ds7EokN5AdekRxIekRTdF0VEhRF5qNNairc0kn_gwLFFGmYAJTEYzLngHVIJA-QKAg0To4LOUPUf8dSCyWG9CNh94AW_-iSMgN3DaBmqab8BV9uNx90VTTYnwlJnd0mtudIXtUBJNhu2PpDz5wHdVgU-2fuxrPzQ3q01Ofv4IfONWXOKsEVl_PaDAtUILfm8WiJxIKm8qQ_-a5-8RPIpAHCnueQo2T8XObTH08P09G0WDXCDhI6u_7gCLVjDr4SIfTgu_ptkqq56faZMPt-aJmxsPiyaxPclu4Vc0ux8o9B25ZQVk/p.jpeg?size_mode=5'
-                }
-              ]
+              title: 'Difusor',
+              src: 'img/prodruct2.jpeg'
             }
           ]
         },
         {
-          render: 'https://uc854fb80a67c77b5164b763d696.previews.dropboxusercontent.com/p/thumb/AAZgAjvbJcYrQhLNNUbfqys8YorwNSkJCXMGfW1cL-VDCG7uiAaDSyNBdtjWfuHqnGhoVNbtSEJDyy3xVnmMRrwLkgWxd4uGOPe7CNAyrad5WZ_TKDe0gka0LnjpTiJe7s_r5BG7K3EE5DmX_ipFe62CljnGtJGmsbpzgv6gm14dK7DIQS3vLrsBDr11XbSNLK45fBkdemMTzqRYHw4VN_72JC7KBpWEhEsLjuMqRwAVrMlL5iCG6EEk0B6Kx4MRVfai4wkih7LgYJN3Ws0PkUEgMr-6gdT4jrNwQ5a6rRSeQuY7Wa6HflCRDbP0MBUyAajBBuYJJALTmSL5ZqazOTslyF8nzNmmPxx03cU-VCG5VgTMlWNezXTsmndSdcH7XRU/p.jpeg?size=1600x1200&size_mode=3',
-          pointers: [
+          y:28,
+          x:66,
+          variant: true,
+          items:[
             {
-              y: 35,
-              x:10
+              title: 'Sales para tina',
+              src: 'img/prodruct3.jpeg'
             },
             {
-              y:62,
-              x:25
-            },
-            {
-              y:70,
-              x:45
-            },
-            {
-              y:30,
-              x:68
-            },
-            {
-              y:83,
-              x:68
-            },
-            {
-              y:15,
-              x:85,
-              variant: true,
-              items:[
-                {
-                  title: 'Crema Corporal',
-                  src: 'https://uc992ed47f317c71ace248fafe1c.previews.dropboxusercontent.com/p/thumb/AAbRKt2DTVsUz1OBb5zEoODbQ57Z0EABjwEi8VOgeHMZ9LUnANVg__KVqPjDZC2j91_PHQwzxt5sBEGhgvzfXrdWPWS0OEZji92RUnOv90RHt6lxYUM_FtYk_MkwlwhcrKismAzepmFXGOk3qYkXWk1Tc74l5uL5uYbKuXhBqYjSh7Ge2nDztF7YY_VPsX7zeY88H27Nn_v31fqyQAwaXc3SUslqVCwhVVN-X5HMJMhRYbTPf52Eqewc2OycDZmqK3SinSEvAu5SxKskRaQyA40CmHXsYT5ZBCFwlrV6HXnZhPTdr2-f4tAm05me20I3fWKhp_0UqAbrWGMIDs75q-gZ94bzlu2lRs7iyFSk0qxr3z36ApISgbSYNxt5Ks7O02c/p.jpeg?size=1600x1200&size_mode=3'
-                },
-                {
-                  title: 'Difusor',
-                  src: 'https://ucce7f66b4c323cd4b61ab4714eb.previews.dropboxusercontent.com/p/thumb/AAYS2HicEBMJqYFpJO2c14WlYa08G8SEsYv6y2WREkdiMiWomOyB3VP3hzU0BVZwAE9jHDKbCB8d9pCOO1oM59OZ0f7e3b9o9bzVsWNCSztr37FTABq6I-t7iPAM7_d8XoRau7oYhGoU0XfAAkPmbGSKXUqPQZTDp6u-M1XxfHJsUOn2DQq46WALBCA64glIY0uxEXDNXcTL8Tc39VsUaDD1xdprhlma9vPyMjGWeGEzDJxfIRBnC5ncUf9nOsd267NrKTWSviBaQ1zhgzr7UHPsZeYO5Hlc4nggInmbO0Vf-hC5G6iyn9WzKqsw8ARfESmMHq8Yq8Kmv4NwQjvWzhG6CAIK-jzb1SbXm1TO_UnxMTgJZxzdKXu3lrvUaZBBSuQ/p.jpeg?size=1600x1200&size_mode=3'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://uc5dae2a04e9f576e9fa494d33a0.previews.dropboxusercontent.com/p/thumb/AAbFeqcfWJHmzW9mhFjFRlLb4CWU-RaCjwRAp7jdt_RDU1v4HnL2xWVCCK5NkC10nD71UCrRva3yXnpq412l-D65YqM_DDkqVTqYCa-vkb9T7Za41-mc-KRF3Rhqj-l9qx54MSb5DhkGYwCdq7S6t9yXHwWMp8S-nCnGkAQ_c1cz1SrV3pVTON3AgCfs2gkt3mF_iTJFjmLeA7XeocSlcS_EodBWAH42sepmKWNGU_6hz5s13urB2YaKZtIlQmtlEN3yYHeGlW8V1c786jS8JBEQ9JS6kGigsRpSGMG_GOzbXkrOa3_WAGIpdd4mIYN-48SUa1jUsgqV6yR8axRMgUFZokJQxzOaTcKkDUqOgVKgCl3x4WB9w1C1LD3AIaENOzI/p.jpeg?size_mode=5',
-          pointers: [
-            {
-              y: 20,
-              x:30
-            },
-            {
-              y:35,
-              x:60
-            },
-            {
-              y:32,
-              x:66
-            },
-            {
-              y:70,
-              x:85
-            },
-            {
-              y:6,
-              x:15,
-              items:[
-                {
-                  title: 'Gel de ducha 250ml',
-                  src: 'https://uc0dbae049472c002a65e1f05232.previews.dropboxusercontent.com/p/thumb/AAbcoTfqFolrcQ5jlY6z6-QUDirSnC4WLlDEnMJsZONBD1C8Bl9YvmCDm2cB6Ole43Q_B78WPmu6skaQSfTR34IVRKPGWIavLQ81nlJwiHcF0nJ3tPlojpm2qTNQ4aSXSf35tpkBceaUFpd5KlAJEdoFjufOgkliR2c673ZzjCkWRSaiV0-PKRORV493yNyqI5MUMLEL3bSZo56ByxCVDA5XSYSMfwMBHA0Hs3QQtK0JSpZoP2e9ewTzM4bwH-YqEEVKwQiajD4R6Xkx8Kh3KxJAlqxwKvsBBu9daE-ZH2qgLf7a38wpoENogZ-_1-3ViVgBFVw4FHNgtiBWsz4_fV6d0Fucv9VyB4jTBF_6t1F_xwZT9mX6LyNgtGB9xks9nZk/p.jpeg?size=1600x1200&size_mode=3'
-                }
-              ]
-            },
-            {
-              y:25,
-              x:77,
-              variant:true,
-              items:[
-                {
-                  title: 'Jabón para manos',
-                  src: 'https://uc0dbae049472c002a65e1f05232.previews.dropboxusercontent.com/p/thumb/AAbcoTfqFolrcQ5jlY6z6-QUDirSnC4WLlDEnMJsZONBD1C8Bl9YvmCDm2cB6Ole43Q_B78WPmu6skaQSfTR34IVRKPGWIavLQ81nlJwiHcF0nJ3tPlojpm2qTNQ4aSXSf35tpkBceaUFpd5KlAJEdoFjufOgkliR2c673ZzjCkWRSaiV0-PKRORV493yNyqI5MUMLEL3bSZo56ByxCVDA5XSYSMfwMBHA0Hs3QQtK0JSpZoP2e9ewTzM4bwH-YqEEVKwQiajD4R6Xkx8Kh3KxJAlqxwKvsBBu9daE-ZH2qgLf7a38wpoENogZ-_1-3ViVgBFVw4FHNgtiBWsz4_fV6d0Fucv9VyB4jTBF_6t1F_xwZT9mX6LyNgtGB9xks9nZk/p.jpeg?size=1600x1200&size_mode=3'
-                },
-                {
-                  title: 'Jabón artesanal',
-                  src: 'https://uc81eec0ed6424f7868a1d405d53.previews.dropboxusercontent.com/p/thumb/AAbE9Ihje2aZkGzgJlg8fgQDnsnXKvpU3T9dG1tOzT765YHjvRqI5Jg7OLxcV6HkmzfeVkGqHth8yw5AEBhk0tARDed4FTtbFBYy1apKyXDqubhDZuTwc5IynXDrNzUcOlzCTNFAtQPjAiZRWu2w2BjIlhWtbI3kP7dbXGfNRwjfn5wZMgtiGVJArmem1mr3xA0CjoigV9Mwm8sCqUg3Vj9Zb_roUyKNDKiRyPSNpmKWKK7bbv3F6HdfUgwz-0UZG7DZyrCq1WU4l4fBrVjzrOOo3CffNuYMXXduUgyOmsl-kNVEyvaDc1S-L7uP93cruzhjwNPLS88OzhCIfmA9zNsEvRltRkuIxZ22iVwtWAUT_wsiXupySlYN8Eoa60XUdzQ/p.jpeg?size=1600x1200&size_mode=3'
-                },
-                {
-                  title: 'Crema para manos',
-                  src: 'https://uc0dbae049472c002a65e1f05232.previews.dropboxusercontent.com/p/thumb/AAbcoTfqFolrcQ5jlY6z6-QUDirSnC4WLlDEnMJsZONBD1C8Bl9YvmCDm2cB6Ole43Q_B78WPmu6skaQSfTR34IVRKPGWIavLQ81nlJwiHcF0nJ3tPlojpm2qTNQ4aSXSf35tpkBceaUFpd5KlAJEdoFjufOgkliR2c673ZzjCkWRSaiV0-PKRORV493yNyqI5MUMLEL3bSZo56ByxCVDA5XSYSMfwMBHA0Hs3QQtK0JSpZoP2e9ewTzM4bwH-YqEEVKwQiajD4R6Xkx8Kh3KxJAlqxwKvsBBu9daE-ZH2qgLf7a38wpoENogZ-_1-3ViVgBFVw4FHNgtiBWsz4_fV6d0Fucv9VyB4jTBF_6t1F_xwZT9mX6LyNgtGB9xks9nZk/p.jpeg?size=1600x1200&size_mode=3'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://ucddcc363c78dc69dafe5c511904.previews.dropboxusercontent.com/p/thumb/AAa4eeia9oe6LISGXxt48bMUNX1WFo2Ij406uqH19ERCGb06SHqG-x13FR5845p6sovoshknKdYsrT8APxXHB5_NTWxjlwxE-LgRPNfzXd992VpygQ_gqtO_5r2J5Tk5RLYcDGMiz4ZJcH-eXnQBW7aBjUFdTn8PJIg0DV79aF5WidieLiYwvKevkKLlvkQnyuemad8a8dmbF5s33idDjh-kOz2CjfjRSawXC9912BRXFYNSY73vWfBvou_UF2lBkgDz9qchkFoXrj9Yqx6Vs5ZG2-Cz2LVeA9OxWKSqRKyTH1_HFiNEjwJIqdUx7DxgJ3DZ3f_FB_KKlHXBguPhkoQlPUrY2Zqu_0V6So9c37FmOQ55bT1ItPAB6j3xxyMeE3Q/p.jpeg?size_mode=5',
-          pointers: [
-            {
-              y:32,
-              x:41,
-              items:[
-                aromAmbiental,
-                difusor
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://uc5149bc40225347e9acdb7d2c14.previews.dropboxusercontent.com/p/thumb/AAaI8ZYFtyqNRQ92QmHmGKxWrPfQE1pKB1PVj1T_Zz2cu9Lk61ow1eykrR2e2pgHWIHKmer4koTzLYvZKkoTetGvBiOIUo1WYOx65mLJV1717Fj1awZ8PoIuazMs_JSH1YztbuGHfcPSwZIAutPROsINoVUNrhdJ-EHlMNiwz4phPZRIOiWtuaQ94EuNx6gti_WCQlHq3-kYE-Qvexz9WxeB5AGFCC5P2Q1nOqe-2Qr35Fp7bLD1oqhhD0b2RcpevdfkaYaGskEjolXCKP52PIX9VX4vLRmDLcs6Z1tj2EjhmxMySeKtwE601OmU2Ub6JEIombVmi6tPvFAqQqwM2GrP3XDGj09eCRzG_Kt97AeTjqa7mSPpZ3KFJzmm764kkVY/p.jpeg?size=1600x1200&size_mode=3',
-          pointers: [
-            {
-              y:15,
-              x:28,
-              items:[
-                {
-                  title: 'Botella de jabón para baño 250ml',
-                  src: 'https://uc0dbae049472c002a65e1f05232.previews.dropboxusercontent.com/p/thumb/AAbcoTfqFolrcQ5jlY6z6-QUDirSnC4WLlDEnMJsZONBD1C8Bl9YvmCDm2cB6Ole43Q_B78WPmu6skaQSfTR34IVRKPGWIavLQ81nlJwiHcF0nJ3tPlojpm2qTNQ4aSXSf35tpkBceaUFpd5KlAJEdoFjufOgkliR2c673ZzjCkWRSaiV0-PKRORV493yNyqI5MUMLEL3bSZo56ByxCVDA5XSYSMfwMBHA0Hs3QQtK0JSpZoP2e9ewTzM4bwH-YqEEVKwQiajD4R6Xkx8Kh3KxJAlqxwKvsBBu9daE-ZH2qgLf7a38wpoENogZ-_1-3ViVgBFVw4FHNgtiBWsz4_fV6d0Fucv9VyB4jTBF_6t1F_xwZT9mX6LyNgtGB9xks9nZk/p.jpeg?size=1600x1200&size_mode=3'
-                }
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://ucd2ab425b756430acb5d8159d77.previews.dropboxusercontent.com/p/thumb/AAY3L2VybRpqWI7FkC9xR3qWo0berpzeL7KkXsve7k66nky7cO1kR07qPORg_e8wRr5A4hsQwpXSFdryQJg_Ozfb5LGhdf5Qq2Utqq7lPYwZLZA482lsqWJFxmDo7FVNZOm7Xh-TZR48DYFTxp51RbEmbnKtjCOAQYQ4KRB9BfcD59eJT41VCl8hdPjzh0bzCeIXQjdo-Y2QfeNnFNhUFR6uAfkWXyOu0WTjfgNF1EIHWlJ-mdmZWWctRomD7CF2H5oby5h7NE7S6ySjWsJWRQLZlg7JSD68jDAlijRvY9WApieBbk5kEssc4cyrNbU-SbWqcoF6IQCMLSH-4s59BNXCDoxiqgwmTAaHFxewThh5R-N6LEKjPKtLB1vCAp9MJQU/p.jpeg?size=1600x1200&size_mode=3',
-          pointers: [
-            {
-              y:80,
-              x:35,
-            },
-            {
-              y:25,
-              x:83,
-            },
-            {
-              y:28,
-              x:70,
-              variant: true,
-              items:[
-                aromBlancos,
-                difusor
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://uc70cc17122a9ee0617851706205.previews.dropboxusercontent.com/p/thumb/AAYdhdbce3UhJ-yCrEugkwq3ixAuZN8VmzjRSugkj3U75SetX7HXlhbueaf8Emh2kC0G1MlQYu2HVRNbF2QiuAe_xIWmei7V7Pjtpx7Dq7c81-KmaobgqLKgcPJIymsJyMrNtVyX7Ya4MJCM0_OzGZDO8tR4dOUruMfvqPOXLB7wtpYTdkah7xV7Op9q2Fjf81dIMZx6xPeAdT0TNZEaNSB5VbaJTXzpld5UhTY-qGZtUDNfaCNp7lw65GWGupv6151u3uRcsbxGJwFGwmdFnxD9E6vT6SvPY_RDS5xncjDsdwYnpQ2IpVHmW9zoG0zNB9pLiJMHdE8rDH4V3IfnQwdJnWgCivR5dK9JelyiyBAH0eVpkXauYb1C4SN_U_FLoYg/p.jpeg?size=1600x1200&size_mode=3',
-          pointers: [
-            {
-              y:80,
-              x:35,
-            },
-            {
-              y:15,
-              x:93,
-            },
-            {
-              y:35,
-              x:85,
-              variant:true,
-              items:[
-                aromAmbiental,
-                difusor
-              ]
-            }
-          ]
-        },
-        {
-          render: 'https://uc70cc17122a9ee0617851706205.previews.dropboxusercontent.com/p/thumb/AAYdhdbce3UhJ-yCrEugkwq3ixAuZN8VmzjRSugkj3U75SetX7HXlhbueaf8Emh2kC0G1MlQYu2HVRNbF2QiuAe_xIWmei7V7Pjtpx7Dq7c81-KmaobgqLKgcPJIymsJyMrNtVyX7Ya4MJCM0_OzGZDO8tR4dOUruMfvqPOXLB7wtpYTdkah7xV7Op9q2Fjf81dIMZx6xPeAdT0TNZEaNSB5VbaJTXzpld5UhTY-qGZtUDNfaCNp7lw65GWGupv6151u3uRcsbxGJwFGwmdFnxD9E6vT6SvPY_RDS5xncjDsdwYnpQ2IpVHmW9zoG0zNB9pLiJMHdE8rDH4V3IfnQwdJnWgCivR5dK9JelyiyBAH0eVpkXauYb1C4SN_U_FLoYg/p.jpeg?size=1600x1200&size_mode=3',
-          pointers: [
-            {
-              y:80,
-              x:35,
-            },
-            {
-              y:35,
-              x:85,
-              variant:true,
-              items:[
-                aromAmbiental,
-                difusor
-              ]
+              title: 'Sphera para tina',
+              src: 'img/prodruct4.jpeg'
             }
           ]
         }
       ]
-    each item in pointers
-      +pointers(item)
-    script(src="index.js")
-    
+    }
+  +pointers(pointer)  

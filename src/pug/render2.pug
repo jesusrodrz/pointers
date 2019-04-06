@@ -1,0 +1,50 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Baño 2'
+    var next = 2
+    var prev = '0'
+block main
+  -
+    var pointer = {
+          render: 'img/render2.jpeg',
+          pointers: [
+            {
+              y: 35,
+              x:10
+            },
+            {
+              y:62,
+              x:25
+            },
+            {
+              y:70,
+              x:45
+            },
+            {
+              y:30,
+              x:68
+            },
+            {
+              y:83,
+              x:68
+            },
+            {
+              y:15,
+              x:85,
+              variant: true,
+              items:[
+                {
+                  title: 'Crema Corporal',
+                  src: 'img/product5.jpeg'
+                },
+                {
+                  title: 'Difusor',
+                  src: 'img/product2.jpeg'
+                }
+              ]
+            }
+          ]
+        }
+  +pointers(pointer)  

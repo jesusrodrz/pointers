@@ -1,0 +1,27 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Comedor'
+    var next = 0
+    var prev = 6
+block main
+  -
+    var pointer = {
+      render: 'img/render8.jpeg',
+      pointers: [
+            {
+              y:90,
+              x:32,
+            },
+            {
+              y:55,
+              x:8,
+              items:[
+                aromAmbiental,
+                difusor
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  

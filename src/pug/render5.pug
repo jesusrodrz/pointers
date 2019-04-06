@@ -1,0 +1,25 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Cocina'
+    var next = 5
+    var prev = 3
+block main
+  -
+    var pointer = {
+      render: 'img/render5.jpeg',
+      pointers: [
+            {
+              y:15,
+              x:28,
+              items:[
+                {
+                  title: 'Botella de jabón para baño 250ml',
+                  src: 'img/product7.jpeg'
+                }
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  

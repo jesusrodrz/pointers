@@ -1,0 +1,32 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Recámara'
+    var next = 6
+    var prev = 4
+block main
+  -
+    var pointer = {
+      render: 'img/render6.jpeg',
+      pointers: [
+            {
+              y:80,
+              x:35,
+            },
+            {
+              y:25,
+              x:83,
+            },
+            {
+              y:28,
+              x:70,
+              variant: true,
+              items:[
+                aromBlancos,
+                difusor
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  

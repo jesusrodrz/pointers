@@ -1,0 +1,60 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Baño 3'
+    var next = 3
+    var prev = 1
+block main
+  -
+    var pointer = {
+      render: 'img/render3.jpeg',
+      pointers: [
+            {
+              y: 20,
+              x:30
+            },
+            {
+              y:35,
+              x:60
+            },
+            {
+              y:32,
+              x:66
+            },
+            {
+              y:70,
+              x:85
+            },
+            {
+              y:6,
+              x:15,
+              items:[
+                {
+                  title: 'Gel de ducha 250ml',
+                  src: 'img/product6.jpeg'
+                }
+              ]
+            },
+            {
+              y:25,
+              x:77,
+              variant:true,
+              items:[
+                {
+                  title: 'Jabón para manos',
+                  src: 'img/product6.jpeg'
+                },
+                {
+                  title: 'Jabón artesanal',
+                  src: 'img/product1.jpeg'
+                },
+                {
+                  title: 'Crema para manos',
+                  src: 'img/product5.jpeg'
+                }
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  

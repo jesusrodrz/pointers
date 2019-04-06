@@ -1,0 +1,23 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Área Común'
+    var next = 4
+    var prev = 2
+block main
+  -
+    var pointer = {
+      render: 'img/render4.jpeg',
+      pointers: [
+            {
+              y:32,
+              x:41,
+              items:[
+                aromAmbiental,
+                difusor
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  

@@ -1,0 +1,32 @@
+extends includes/template.pug
+include includes/pointers.pug
+block vars
+  -
+    var title = 'Sala de estar'
+    var next = 7
+    var prev = 5
+block main
+  -
+    var pointer = {
+      render: 'img/render7.jpeg',
+      pointers: [
+            {
+              y:80,
+              x:35,
+            },
+            {
+              y:15,
+              x:93,
+            },
+            {
+              y:35,
+              x:85,
+              variant:true,
+              items:[
+                aromAmbiental,
+                difusor
+              ]
+            }
+          ]
+    }
+  +pointers(pointer)  
