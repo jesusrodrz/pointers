@@ -1,0 +1,22 @@
+mixin pointers(item)
+  .container
+    img.container__img(src=item.render)
+    each pointer in item.pointers
+      .pointer(style=`--y:${pointer.y}%;--x:${pointer.x}%`,class=`${pointer.variant ? 'left' : ''}` )
+        button.pointer__icon(class=`${pointer.items ? '' : 'pointer__icon--red'}`) ✕
+        if pointer.items
+          .pointer__body
+            button.pointer__close ✕
+            each item in pointer.items
+              .pointer__item
+                figure.pointer__fig: img.pointer__img(src=item.src)
+                h2.pointer__title #{item.title}
+            nav.pointer__nav
+              a.pointer__link(href="#"): i.icon.icon-heart
+              a.pointer__link(href="#"): i.icon.icon-flickr2
+              a.pointer__link(href="#"): i.icon.icon-share2
+          
+
+
+        
+
