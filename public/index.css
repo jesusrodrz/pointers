@@ -190,6 +190,7 @@ body {
   align-items: center;
   justify-content: center;
   top: 0;
+  z-index: 10000
 }
 .link-con:nth-of-type(1) {
   right: 0;
