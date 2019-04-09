@@ -176,7 +176,6 @@ body {
   font-size: 1.2em;
   transition: all ease-in-out 0.4s;
   opacity: 0;
-  opacity: 1;
   text-decoration: none;
 }
 .link-con:hover .link {
@@ -190,7 +189,7 @@ body {
   align-items: center;
   justify-content: center;
   top: 0;
-  z-index: 10000
+  z-index: 10000;
 }
 .link-con:nth-of-type(1) {
   right: 0;
