@@ -1,0 +1,5 @@
+define(["jquery",'mage/storage','Mageplaza_LayeredNavigation/js/model/loader'],function($,storage,loader){"use strict";$(".footer-primary").each(function(i,obj){$(obj).find('a').each(function(){if($(this).text().includes("Facturación")){var href=$(this).attr('href');$(this).click(function(event){event.preventDefault();var html="<span style=\"text-align: left;\">"+
+"<p>Estimado Cliente: Si usted requiere facturar alguna compra realizada en tiendas pertenecientes a la franja fronteriza Norte, le comunicamos que estamos en espera de la autorización por parte del SAT para la aplicación de la tasa del IVA al 8% publicado mediante decreto.</p>"+
+"<p>Tan pronto como contemos con dicha autorización, usted estará en la posibilidad de generar sus facturas sin problema alguno.</p>"+
+"<p>De antemano, gracias por su comprensión.</p>"+
+"</span>";$('<div/>').html(html).modal({title:'Aviso',autoOpen:true,escapeClose:false,clickClose:false,showClose:false,closed:function(){window.location=href;},buttons:[{text:'Continuar',attr:{'data-action':'continue'},click:function(){window.location=href;}}]});});}});});return function(config,element){console.log(config.message);}})
