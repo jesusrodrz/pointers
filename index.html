@@ -275,65 +275,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </div>
     </noscript>
-<div class="page-wrapper">
+    <header class="header"><a class="header__link" href="./inspiracion/index.html"><img class="header__img" src="img/header2.png"/></a></header>
 
-
-
-
-
-
-        <header class="header"><a class="header__link" href="./inspiracion/index.html"><img class="header__img" src="img/header2.png"/></a></header>
-
-<script type="text/javascript" xml="space">// <![CDATA[
-    function toggle_ChatVisibility(id) {
-      /* var e = document.getElementById(id);
-       if(e.classList.contains('chat-moved')) {
-          e.classList.remove('chat-moved');
-       } else {
-          e.classList.add('chat-moved');
-       }*/
-       if(id=='chatContainer') {
-		   jQuery('<div/>').html('¿Desea comunicarse con un agente?').modal({
-				title: '',
-                autoOpen: true,
-               autoClose: true,
-                closed: function () {},
-                buttons: [{
-                        text: 'Aceptar',
-                        'class': 'action-primary',
-                        click: function (dialog) {
-
-                            var response = '';
-                            jQuery.ajax({ type: "GET",
-									 url: "/chat/index/index",
-									 async: false,
-									 data: {'current_page_title': document.title},
-									 success : function(text)
-									 {
-										 response = text;
-										 var newWindow = window.open(response, 'Right Now', 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,height=540px, width= 370px');
-jQuery('.CancelButtonPopUp').click();
-										 //e.innerHTML = '<iframe src="' + response + '" frameborder="0" width="370px" height="540px"></iframe>';
-										 //e.classList.add('loaded');
-									 }
-							});
-                        }
-                    },{
-			text: 'Cancelar',
-                       attr: {
-                            'data-action': 'confirm'
-                        },
-                        'class': 'action-primary CancelButtonPopUp',
-					  action: function(dialog) {
-						dialog.close();
-					  }
-					}]
-					});
-
-			  }
-       }
-// ]]></script> </div>
-</div>
 <div class="custom-slider">
 <div class="owl-carousel-custom-1 owl-carousel owl-theme owl-loaded">
 
