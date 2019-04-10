@@ -1,64 +1,2240 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <title>Baño 1</title>
-  </head>
-  <body>
-    <header class="header"><img class="header__img" src="img/header.jpg"/></header>
-    <div class="link-con"><a class="link" href="render2.html"><i class="icon icon-arrow-right2"></i></a></div>
-    <div class="container"><img class="container__img" src="img/render1.jpeg"/>
-      <div class="pointer" style="--y:35%;--x:3%">
-        <button class="pointer__icon pointer__icon--red">✕</button>
-      </div>
-      <div class="pointer" style="--y:50%;--x:30%">
-        <button class="pointer__icon pointer__icon--red">✕</button>
-      </div>
-      <div class="pointer" style="--y:80%;--x:40%">
-        <button class="pointer__icon pointer__icon--red">✕</button>
-      </div>
-      <div class="pointer" style="--y:30%;--x:80%">
-        <button class="pointer__icon pointer__icon--red">✕</button>
-      </div>
-      <div class="pointer left" style="--y:15%;--x:65%">
-        <button class="pointer__icon">✕</button>
-        <div class="pointer__body">
-          <button class="pointer__close">✕</button>
-          <div class="pointer__item">
-            <figure class="pointer__fig"><img class="pointer__img" src="img/product1.jpg"/></figure>
-            <h2 class="pointer__title">Jabón Artesanal</h2>
-            <p class="pointer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus semper dapibus.</p>
-          </div>
-          <div class="pointer__item">
-            <figure class="pointer__fig"><img class="pointer__img" src="img/product2.jpg"/></figure>
-            <h2 class="pointer__title">Difusor 110ml</h2>
-            <p class="pointer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus semper dapibus.</p>
-          </div>
-          <nav class="pointer__nav"><a class="pointer__link" href="#"><i class="icon icon-heart"></i></a><a class="pointer__link" href="#"><i class="icon icon-flickr2"></i></a><a class="pointer__link" href="#"><i class="icon icon-share2"></i></a></nav>
+<!-- saved from url=(0028)https://interceramic.com/mx/ -->
+<html lang="es" class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__interceramic_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./index_files/e0bb0c4ad5"></script><script src="./index_files/nr-1118.min.js"></script><script src="./index_files/492710597896511" async=""></script><script src="./index_files/sdk.js" async="" crossorigin="anonymous"></script><script async="" src="./index_files/fbevents.js"></script><script id="facebook-jssdk" src="./index_files/sdk(1).js"></script><script type="text/javascript" async="" src="./index_files/f.txt"></script><script type="text/javascript" async="" src="./index_files/analytics.js"></script><script async="" src="./index_files/gtm.js"></script><script>
+    var require = {
+        "baseUrl": "https://interceramic.com/static/version1554488155/frontend/Entrepids/interceramic_new_site/es_MX"
+    };
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="Magento, Varien, E-commerce">
+<meta name="robots" content="INDEX,FOLLOW">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Interceramic</title>
+<link rel="stylesheet" type="text/css" media="all" href="./index_files/ec04461a9e08e5e3a852bcbc81f121fc.min.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./index_files/styles-l.min.css">
+<link rel="stylesheet" type="text/css" media="print" href="./index_files/print.min.css">
+<script type="text/javascript" src="./index_files/0210e6793fc230a88befc7406f27bc25.js"></script>
+<link rel="icon" type="image/x-icon" href="https://interceramic.com/media/favicon/default/favicon_1.ico">
+<link rel="shortcut icon" type="image/x-icon" href="https://interceramic.com/media/favicon/default/favicon_1.ico">
+<link rel="stylesheet" href="./index_files/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous">
+<script src="./index_files/ekko-lightbox.js" integrity="sha256-jGAkJO3hvqIDc4nIY1sfh/FPbV+UK+1N+xJJg6zzr7A=" crossorigin="anonymous"></script>
+<script src="./index_files/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./index_files/jquery(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="./index_files/jquery.mobile.custom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="./index_files/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/bootstrap" src="./index_files/bootstrap.js"></script>
+<script src="./index_files/ekko-lightbox.min.js" integrity="sha256-Y1rRlwTzT5K5hhCBfAFWABD4cU13QGuRN6P5apfWzVs=" crossorigin="anonymous"></script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWCJP4H');</script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate-inline" src="./index_files/translate-inline.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="./index_files/responsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="./index_files/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="./index_files/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="./index_files/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="./index_files/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="./index_files/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="./index_files/bootstrap(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="./index_files/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/tabs" src="./index_files/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="./index_files/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="./index_files/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="./index_files/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="./index_files/ie-class-fixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Ibnab_MegaMenu/js/modernizr-2.8.3" src="./index_files/modernizr-2.8.3.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="matchMedia" src="./index_files/matchMedia.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="./index_files/jquery-migrate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/common" src="./index_files/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="./index_files/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_OwlCarouselSlider/js/owl.carousel" src="./index_files/owl.carousel.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_OwlCarouselSlider/js/owl.config" src="./index_files/owl.config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="./index_files/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="./index_files/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="./index_files/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="./index_files/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="./index_files/jquery.storageapi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/collapsible" src="./index_files/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="./index_files/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="./index_files/bootstrap(2).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="./index_files/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="./index_files/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="./index_files/scripts.js"></script><script src="./index_files/f(1).txt"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./index_files/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="./index_files/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="./index_files/customer-data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="./index_files/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="./index_files/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="./index_files/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="./index_files/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es6-collections" src="./index_files/es6-collections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="./index_files/section-config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/storage" src="./index_files/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="./index_files/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="./index_files/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="./index_files/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="./index_files/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="./index_files/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="./index_files/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="./index_files/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="./index_files/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="./index_files/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="./index_files/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="./index_files/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="./index_files/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="./index_files/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="./index_files/collapsible(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="./index_files/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="./index_files/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="./index_files/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="./index_files/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="./index_files/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="./index_files/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/url" src="./index_files/url.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="./index_files/main(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/calendar" src="./index_files/calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="./index_files/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="./index_files/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="./index_files/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="./index_files/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="./index_files/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="./index_files/moment(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="./index_files/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="./index_files/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="./index_files/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="./index_files/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="./index_files/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="./index_files/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="./index_files/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-ui-timepicker-addon" src="./index_files/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="./index_files/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="./index_files/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="./index_files/template(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="./index_files/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="./index_files/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="./index_files/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="./index_files/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="./index_files/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="./index_files/entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MutationObserver" src="./index_files/MutationObserver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="FormData" src="./index_files/FormData.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader" src="./index_files/loader(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="./index_files/page-cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="./index_files/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown" src="./index_files/dropdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Search/form-mini" src="./index_files/form-mini.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdowns" src="./index_files/dropdowns.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/menu" src="./index_files/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Cms/js/links" src="./index_files/links.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation/validation" src="./index_files/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/cookies" src="./index_files/cookies.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="./index_files/block-loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="./index_files/invalidation-processor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Banner/js/model/banner" src="./index_files/banner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="./index_files/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="./index_files/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="./index_files/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_LayeredNavigation/js/model/loader" src="./index_files/loader(2).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="./index_files/validation(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="./index_files/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="./index_files/links(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="./index_files/minicart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="./index_files/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="./index_files/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="./index_files/totals(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="./index_files/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="./index_files/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="./index_files/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Entrepids_Warranty/js/view/warranty-popup" src="./index_files/warranty-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Wishlist/js/view/wishlist" src="./index_files/wishlist.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/customer" src="./index_files/customer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Entrepids_ZonificacionCedis/js/view/zip_code" src="./index_files/zip_code.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="./index_files/messages(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Banner/js/view/banner" src="./index_files/banner(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="./index_files/storage-manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_MultipleWishlist/js/view/multiple-wishlist" src="./index_files/multiple-wishlist.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="./index_files/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="./index_files/messageList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="./index_files/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="./index_files/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="./index_files/login(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="./index_files/authentication-popup(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="./index_files/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Entrepids_Warranty/js/model/warranty-popup" src="./index_files/warranty-popup(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/customer" src="./index_files/customer(1).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="./index_files/storage-service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="./index_files/website-rule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="./index_files/messages(2).js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/decorate" src="./index_files/decorate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="./index_files/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="./index_files/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="./index_files/adapter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="./index_files/ids-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="./index_files/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="./index_files/ids-storage-compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/address-list" src="./index_files/address-list.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="./index_files/query-builder.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/customer-addresses" src="./index_files/customer-addresses.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Entrepids_ShippingAddressMap/js/model/customer/address" src="./index_files/address.js"></script></head>
+<body data-container="body" class="interceramic cms-home cms-index-index page-layout-1column" data-gr-c-s-loaded="true" aria-busy="false">
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./index_files/d_vbiawPdxB.html" style="border: none;"></iframe></div><div></div></div></div>
+<script>
+        require(['jquery'],function($) {
+            'use strict';
+            function statusChangeCallback(response) {
+                if (response.status === 'connected') {
+                    responseAPI();
+                } else {
+                    console.log('No se pudo hacer login con facebook')
+                }
+            }
+
+            window.checkLoginState = function () {
+                FB.getLoginStatus(function(response) {
+                    statusChangeCallback(response);
+                });
+            }
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : 451397761632342,
+                    cookie     : true,  // enable cookies to allow the server to access
+                    xfbml      : true,  // parse social plugins on this page
+                    status     : true,
+                    version    : 'v3.0' // use graph api version 2.8
+                });
+
+                /*FB.getLoginStatus(function(response) {
+                    statusChangeCallback(response);
+                });*/
+
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                //js.src = "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.0&appId=&autoLogAppEvents=1";
+                js.src = "https://connect.facebook.net/es_LA/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            function responseAPI() {
+                FB.api('/me?fields=email,name,first_name,last_name', function(response) {
+                    console.log(response)
+                    $.ajax({
+                        url: "https://interceramic.com/mx/sociallogin/index/index/",
+                        data: response,
+                        type: 'post',
+                        dataType: 'json',
+                        showLoader: true,
+                        success: function(res){
+                            if(res.response == 'done'){
+                                window.location.href = "https://interceramic.com/mx/customer/account/index/";
+                            }else{
+                                alert('Facebook login error');
+                            }
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+<script type="text/javascript">
+            console.log("Google Login: Init");
+    </script>
+<script>
+    try {
+        if (!window.localStorage || !window.sessionStorage) {
+            throw new Error();
+        }
+
+        localStorage.setItem('storage_test', 1);
+        localStorage.removeItem('storage_test');
+    } catch(e) {
+        (function () {
+            var Storage = function (type) {
+                var data;
+
+                function createCookie(name, value, days) {
+                    var date, expires;
+
+                    if (days) {
+                        date = new Date();
+                        date.setTime(date.getTime()+(days * 24 * 60 * 60 * 1000));
+                        expires = '; expires=' + date.toGMTString();
+                    } else {
+                        expires = '';
+                    }
+                    document.cookie = name + '=' + value+expires+'; path=/';
+                }
+
+                function readCookie(name) {
+                    var nameEQ = name + '=',
+                        ca = document.cookie.split(';'),
+                        i = 0,
+                        c;
+
+                    for (i=0; i < ca.length; i++) {
+                        c = ca[i];
+
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1,c.length);
+                        }
+
+                        if (c.indexOf(nameEQ) === 0) {
+                            return c.substring(nameEQ.length, c.length);
+                        }
+                    }
+
+                    return null;
+                }
+
+                function setData(data) {
+                    data = encodeURIComponent(JSON.stringify(data));
+                    createCookie(type === 'session' ? getSessionName() : 'localStorage', data, 365);
+                }
+
+                function clearData() {
+                    createCookie(type === 'session' ? getSessionName() : 'localStorage', '', 365);
+                }
+
+                function getData() {
+                    var data = type === 'session' ? readCookie(getSessionName()) : readCookie('localStorage');
+
+                    return data ? JSON.parse(decodeURIComponent(data)) : {};
+                }
+
+                function getSessionName() {
+                    if (!window.name) {
+                        window.name = new Date().getTime();
+                    }
+
+                    return 'sessionStorage' + window.name;
+                }
+
+                data = getData();
+
+                return {
+                    length: 0,
+                    clear: function () {
+                        data = {};
+                        this.length = 0;
+                        clearData();
+                    },
+
+                    getItem: function (key) {
+                        return data[key] === undefined ? null : data[key];
+                    },
+
+                    key: function (i) {
+                        var ctr = 0,
+                            k;
+
+                        for (k in data) {
+                            if (ctr.toString() === i.toString()) {
+                                return k;
+                            } else {
+                                ctr++
+                            }
+                        }
+
+                        return null;
+                    },
+
+                    removeItem: function (key) {
+                        delete data[key];
+                        this.length--;
+                        setData(data);
+                    },
+
+                    setItem: function (key, value) {
+                        data[key] = value.toString();
+                        this.length++;
+                        setData(data);
+                    }
+                };
+            };
+
+            window.localStorage.__proto__ = window.localStorage = new Storage('local');
+            window.sessionStorage.__proto__ = window.sessionStorage = new Storage('session');
+        })();
+    }
+</script>
+<script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+
+                if (versionObj.version !== '9e949c4d9ab61a91ca94dac043032033c53f4637') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: '9e949c4d9ab61a91ca94dac043032033c53f4637'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>Su navegador parece tener JavaScript deshabilitado.</strong>
+                    <span>Para la mejor experiencia en nuestro sitio, asegúrese de habilitar JavaScript en su navegador.</span>
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="pointer left" style="--y:28%;--x:66%">
-        <button class="pointer__icon">✕</button>
-        <div class="pointer__body">
-          <button class="pointer__close">✕</button>
-          <div class="pointer__item">
-            <figure class="pointer__fig"><img class="pointer__img" src="img/product3.jpg"/></figure>
-            <h2 class="pointer__title">Sales para tina 300gr</h2>
-            <p class="pointer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus semper dapibus.</p>
-          </div>
-          <div class="pointer__item">
-            <figure class="pointer__fig"><img class="pointer__img" src="img/product4.jpg"/></figure>
-            <h2 class="pointer__title">Sphera para tina</h2>
-            <p class="pointer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus semper dapibus.</p>
-          </div>
-          <nav class="pointer__nav"><a class="pointer__link" href="#"><i class="icon icon-heart"></i></a><a class="pointer__link" href="#"><i class="icon icon-flickr2"></i></a><a class="pointer__link" href="#"><i class="icon icon-share2"></i></a></nav>
+    </noscript>
+<div class="page-wrapper"><header class="page-header"><div class="panel wrapper"><div class="panel header"><ul class="header links"><div id="linkwishlist" class="link wishlist">
+<a class="icon-heart" title="Ver lista de favoritos" href="https://interceramic.com/mx/wishlist/">
+</a>
+</div>
+
+<li class="authorization-link" data-label="or">
+<a href="https://interceramic.com/mx/customer/account/login/referer/aHR0cHM6Ly9pbnRlcmNlcmFtaWMuY29tL214Lw%2C%2C/">
+Ingresar </a>
+</li>
+<li><a href="https://interceramic.com/mx/customer/account/" class="custom-account-link">Mi cuenta</a></li> <li class="greet welcome" data-bind="scope: &#39;customer&#39;">
+<!-- ko if: customer().fullname  --><!-- /ko -->
+<!-- ko ifnot: customer().fullname  -->
+<span data-bind="html:&quot;¡Bienvenid@!&quot;">¡Bienvenid@!</span>
+<!-- /ko -->
+</li>
+
+</ul><a class="action skip contentarea" href="https://interceramic.com/mx/#contentarea"><span>Saltar a Contenido</span></a>
+<ul class="header links"></ul><div class="header-contact">
+<ul class="contact-left">
+<li class="phone-header">01800 - 725 1010 | </li>
+<li class="contact-link"><a href="https://interceramic.com/mx/centro-de-atencion-interceramic">Contacto</a></li>
+</ul>
+</div><button id="showzip" class="zip-code-movil" onclick="zipcode_open()">Ingresa tu ubicación</button>
+<button id="hidezip" class="zip-code-close close" onclick="zipcode_close()">Ingresa tu ubicación</button>
+<div id="code-zip" class="zip-code" data-bind="scope: &#39;zip-scope&#39;">
+<div class="zonificacion-cp" data-bind="visible: canSeeCityName();" style="display: none;">
+<p style="display: inline-block;">Estás ubicado en: <span id="zonificacion_city-name" class="zonificacion-cp-validated" data-bind="text: getCityName()"></span></p>
+<button class="btn btn-outline-secondary zonificacion-cp-change" type="button" style="" data-bind="click: pedirCP">cambiar</button>
+</div>
+<div class="input-group mb-3 zonificacion-cp-not" data-bind="visible: !canSeeCityName();" style="">
+<input type="text" id="zonificacion-cp-input" class="form-control zonificacion-cp-input" data-bind="valueUpdate: &#39;afterkeydown&#39;, event: { keyup: check }" placeholder="Ingresa tu CP" aria-label="Recipient&#39;s username" aria-describedby="button-addon2">
+<input type="hidden" class="zonificacion-cp-input-url-to-response" value="/">
+<div class="input-group-append">
+<button class="btn btn-outline-secondary zonificacion-cp-button" type="button" id="button-addon2" style="" data-bind="click: enviarCP">enviar</button>
+</div>
+</div>
+</div>
+
+<div class="zonificacion-cp-modal-background d-none" style="position: fixed;left: 0;right: 0;top: 0;bottom: 0;background: #0000005c; z-index: 1000;">
+<div class="zonificacion-cp-modal card">
+<div class="zonificacion-cp-modal-close" style="position: absolute;right: 0;top: 0;cursor: pointer;padding: 5px 10px;font-weight: bold;">X</div>
+<div class="card-body" style="text-align: center;">
+<h5 class="card-title">Para continuar con tu compra es necesario que nos indiques el código postal de la entrega</h5>
+<div style="width: 100%;">
+<input class="zonificacion-cp-modal-input" type="text" style="width: 70%;">
+</div>
+<button type="button" class="btn btn-interceramic-pink zonificacion-cp-modal-button btn-lg">Siguiente</button>
+<h6 class="card-subtitle mb-2 text-muted" style="padding-top: 3em;">Algunos productos pueden variar de precio dependiendo la entrega</h6>
+</div>
+</div>
+</div>
+
+<div class="modal-show-message d-none" style="position: fixed;left: 0;right: 0;top: 0;bottom: 0;background: #0000005c; z-index: 1001;">
+<div class="card">
+<div class="modal-close" style="position: absolute;right: 0;top: 0;cursor: pointer;padding: 5px 10px;font-weight: bold;">X</div>
+<div class="card-body" style="text-align: center;">
+<h5 class="card-title">Ingrese un código postal válido</h5>
+<button type="button" class="btn btn-interceramic-pink modal-close btn-lg">Cerrar</button>
+</div>
+</div>
+</div>
+</div></div><div class="header content"><span data-action="toggle-nav" class="action nav-toggle"><span>Cambiar Nav</span></span>
+<strong class="logo">
+<img src="./index_files/LOGO_IC_NUEVO.png" alt="" width="148" height="43">
+</strong>
+<div data-block="minicart" class="minicart-wrapper">
+<a class="action showcart" title="Ver carrito" href="https://interceramic.com/mx/checkout/cart/" data-bind="scope: &#39;minicart_content&#39;">
+<span class="text">Mi Carrito</span>
+<span class="counter qty empty" data-bind="css: { empty: !!getCartParam(&#39;summary_count&#39;) == false }, blockLoader: isLoading">
+<span class="counter-number">
+<!-- ko if: getCartParam('summary_count') <= 99  -->
+<!-- ko text: getCartParam('summary_count') -->0<!-- /ko -->
+<!-- /ko -->
+<!-- ko if: getCartParam('summary_count') > 99  --><!-- /ko -->
+</span>
+<span class="counter-label">
+<!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+</span>
+</span>
+</a>
+
+<script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/interceramic.com\/mx\/checkout\/cart\/","checkoutUrl":"https:\/\/interceramic.com\/mx\/checkout\/","updateItemQtyUrl":"https:\/\/interceramic.com\/mx\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/interceramic.com\/mx\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/interceramic.com\/mx\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":4,"customerLoginUrl":"https:\/\/interceramic.com\/mx\/customer\/account\/login\/referer\/aHR0cHM6Ly9pbnRlcmNlcmFtaWMuY29tL214Lw%2C%2C\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/interceramic.com\/mx\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/interceramic.com\/mx\/captcha\/refresh\/","isRequired":false}}};
+    </script>
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front mage-dropdown-dialog" tabindex="-1" role="dialog" aria-describedby="ui-id-1" style="display: none;"><div class="block block-minicart empty ui-dialog-content ui-widget-content" data-role="dropdownDialog" id="ui-id-1" style="display: block;">
+<div id="minicart-content-wrapper" data-bind="scope: &#39;minicart_content&#39;">
+<!-- ko template: getTemplate() -->
+<div class="block-title">
+<strong>
+<span class="text" data-bind="i18n: &#39;Shopping Cart&#39;">Carrito de Compras</span>
+<span class="qty empty" data-bind="css: { empty: !!getCartParam(&#39;summary_count&#39;) == false },
+                       attr: { title: $t(&#39;Items in Cart&#39;) }, text: getCartParam(&#39;summary_count&#39;)" title="Productos en Carrito">0</span>
+</strong>
+</div>
+<div class="block-content">
+<button type="button" id="btn-minicart-close" class="action close" data-action="close" data-bind="attr: { title: $t(&#39;Close&#39;) }" title="Cerrar">
+<span data-bind="i18n: &#39;Close&#39;">Cerrar</span>
+</button>
+<!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+<!-- ko ifnot: getCartParam('summary_count') -->
+<strong class="subtitle empty" data-bind="visible: closeSidebar(), i18n: &#39;You have no items in your shopping cart.&#39;">No tiene productos en su carrito de compras.</strong>
+<!-- ko if: getCartParam('cart_empty_message') --><!-- /ko -->
+<!-- /ko -->
+<!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+<!-- ko if: getCartParam('summary_count') --><!-- /ko -->
+<div id="minicart-widgets" class="minicart-widgets">
+<!-- ko foreach: getRegion('promotion') --><!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} --><!-- /ko -->
+<!-- /ko --><!-- /ko -->
+</div>
+</div>
+<!-- ko foreach: getRegion('sign-in-popup') --><!-- /ko -->
+<!-- /ko -->
+</div>
+</div></div></div>
+<div class="block block-search">
+<div class="block block-title"><strong>Buscar</strong></div>
+<div class="block block-content">
+<form class="form minisearch" id="search_mini_form" action="https://interceramic.com/mx/catalogsearch/result/" method="get">
+<div class="field search">
+<label class="label" for="search" data-role="minisearch-label">
+<span>Buscar</span>
+</label>
+<div class="control">
+<input id="search" type="text" name="q" value="" placeholder="Buscar en toda la tienda aquí..." class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+<div id="search_autocomplete" class="search-autocomplete"></div>
+<div class="nested">
+<a class="action advanced" href="https://interceramic.com/mx/catalogsearch/advanced/" data-action="advanced-search">
+Búsqueda Avanzada </a>
+</div>
+</div>
+</div>
+<div class="actions">
+<button type="submit" title="Buscar" class="action search" disabled="">
+<span>Buscar</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<li><a href="https://interceramic.com/mx/customer/account/">Mi cuenta</a></li><div class="user-account-inter field-tooltip toggle">
+
+<span class="icon-login-inter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0"></span>
+<ul id="tooltip-account" class="field-tooltip-content" data-target="dropdown" aria-hidden="true">
+<li>
+<a href="https://interceramic.com/mx/customer/account" title="Mi cuenta">
+<span>Mi cuenta</span>
+</a>
+</li>
+</ul>
+</div></div></header> <div class="sections nav-sections">
+<div class="section-items nav-sections-items" role="tablist">
+<div class="section-item-title nav-sections-item-title active" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.menu" aria-selected="false" aria-expanded="true" tabindex="0">
+<a class="nav-sections-item-switch" data-toggle="switch" href="https://interceramic.com/mx/#store.menu">Menu</a>
+</div>
+<div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content" role="tabpanel" aria-hidden="false">
+<script>
+
+        require([
+            'jquery',
+            'ibnabmodernizr'
+        ], function ($) {
+
+
+            $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+            //Checks if li has sub (ul) and adds class for toggle icon - just an UI
+
+
+            $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+            //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
+
+            $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">Navigation</a>");
+
+            //Adds menu-mobile class (for mobile toggle menu) before the normal menu
+            //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
+            //Normal menu is hidden if width is below 959px, and jquery adds mobile menu
+            //Done this way so it can be used with wordpress without any trouble
+
+            $(".menu > ul > li").hover(function (e) {
+                if ($(window).width() > 767) {
+                    $(this).children("ul").stop(true, false).fadeToggle(150);
+                    e.preventDefault();
+                }
+            });
+            //If width is more than 943px dropdowns are displayed on hover
+
+            $(".menu > ul > li").click(function () {
+                if ($(window).width() <= 767) {
+                    $(this).children("ul").fadeToggle(150);
+                }
+            });
+            //If width is less or equal to 943px dropdowns are displayed on click (thanks Aman Jain from stackoverflow)
+
+            $(".menu-mobile").click(function (e) {
+                $(".menu > ul").toggleClass('show-on-mobile');
+                e.preventDefault();
+            });
+
+
+
+
+        });
+
+    </script>
+<nav class="navigation" role="navigation">
+<div class="menu" id="om">
+<a href="https://interceramic.com/mx/#" class="menu-mobile">Navigation</a><ul>
+<li class="menu-dropdown-icon"><a href="javascript:void(0)" class="level-top"><span>Productos</span></a><ul style="display: none; opacity: 1;"><li class="level1 nav-1-1 first parent"><a href="javascript:void(0)"><span>Pisos y Recubrimientos</span></a><ul class="level1 submenu"><li class="level2 nav-1-1-1 first"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/piso.html"><span>Piso</span></a></li><li class="level2 nav-1-1-2"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/pared.html"><span>Pared</span></a></li><li class="level2 nav-1-1-3 last"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/piezas-especiales.html"><span>Piezas especiales</span></a></li></ul></li><li class="level1 nav-1-2 parent"><a href="javascript:void(0)"><span>Baños</span></a><ul class="level1 submenu"><li class="level2 nav-1-2-1 first"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/sanitarios.html"><span>Sanitarios</span></a></li><li class="level2 nav-1-2-2"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/lavabos.html"><span>Lavabos</span></a></li><li class="level2 nav-1-2-3"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/muebles-vanities.html"><span>Muebles Vanities</span></a></li><li class="level2 nav-1-2-4"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/tinas.html"><span>Tinas</span></a></li><li class="level2 nav-1-2-5"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/regaderas.html"><span>Regaderas</span></a></li><li class="level2 nav-1-2-6"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/canceles.html"><span>Canceles</span></a></li><li class="level2 nav-1-2-7"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/accesorios.html"><span>Accesorios</span></a></li><li class="level2 nav-1-2-8 last"><a data-test="2" href="https://interceramic.com/mx/catalog/category/view/s/griferia/id/76/"><span>Grifería</span></a></li></ul></li><li class="level1 nav-1-3 parent"><a href="javascript:void(0)"><span>Artículos de Cocina</span></a><ul class="level1 submenu"><li class="level2 nav-1-3-1 first"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/griferia.html"><span>Grifería</span></a></li><li class="level2 nav-1-3-2"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/tarjas.html"><span>Tarjas</span></a></li><li class="level2 nav-1-3-3 last"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/accesorios.html"><span>Accesorios</span></a></li></ul></li><li class="level1 nav-1-4 last parent"><a href="javascript:void(0)"><span>Materiales de Instalación</span></a><ul class="level1 submenu"><li class="level2 nav-1-4-1 first"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/adhesivos.html"><span>Adhesivos</span></a></li><li class="level2 nav-1-4-2"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/boquillas.html"><span>Boquillas</span></a></li><li class="level2 nav-1-4-3"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/herramientas.html"><span>Accesorios de instalación</span></a></li><li class="level2 nav-1-4-4"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/materiales-especializados.html"><span>Materiales especializados</span></a></li><li class="level2 nav-1-4-5 last"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/mantenimiento-y-cuidado.html"><span>Mantenimiento y cuidado</span></a></li></ul></li><div class="bottomstatic"></div></ul></li><li><a href="https://interceramic.com/mx/perfilamiento/estilo/index" class="level-top"><span>Encuentra tu estilo</span></a></li><li><a href="inspiracion/index.html" class="level-top"><span>Inspiración</span></a></li><li><a href="https://interceramic.com/mx/general_blog.html" class="level-top"><span>Blog</span></a></li> </ul>
+</div>
+<ul id="dm" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0">
+<li class="level0 nav-1 first level-top parent ui-menu-item" role="presentation"><a href="javascript:void(0)" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Productos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-1-1 first parent ui-menu-item" role="presentation"><a href="javascript:void(0)" aria-haspopup="true" id="ui-id-6" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Pisos y Recubrimientos</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-1-1 first ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/piso.html" id="ui-id-10" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Piso</span></a></li><li class="level2 nav-1-1-2 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/pared.html" id="ui-id-11" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pared</span></a></li><li class="level2 nav-1-1-3 last ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/pisos-y-recubrimientos/piezas-especiales.html" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Piezas especiales</span></a></li></ul></li><li class="level1 nav-1-2 parent ui-menu-item" role="presentation"><a href="javascript:void(0)" aria-haspopup="true" id="ui-id-7" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Baños</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-2-1 first ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/sanitarios.html" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Sanitarios</span></a></li><li class="level2 nav-1-2-2 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/lavabos.html" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Lavabos</span></a></li><li class="level2 nav-1-2-3 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/muebles-vanities.html" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Muebles Vanities</span></a></li><li class="level2 nav-1-2-4 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/tinas.html" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Tinas</span></a></li><li class="level2 nav-1-2-5 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/regaderas.html" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Regaderas</span></a></li><li class="level2 nav-1-2-6 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/canceles.html" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Canceles</span></a></li><li class="level2 nav-1-2-7 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/ba-nos/accesorios.html" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Accesorios</span></a></li><li class="level2 nav-1-2-8 last ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/catalog/category/view/s/griferia/id/76/" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Grifería</span></a></li></ul></li><li class="level1 nav-1-3 parent ui-menu-item" role="presentation"><a href="javascript:void(0)" aria-haspopup="true" id="ui-id-8" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Artículos de Cocina</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-3-1 first ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/griferia.html" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Grifería</span></a></li><li class="level2 nav-1-3-2 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/tarjas.html" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Tarjas</span></a></li><li class="level2 nav-1-3-3 last ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/articulos-de-cocina/accesorios.html" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Accesorios</span></a></li></ul></li><li class="level1 nav-1-4 last parent ui-menu-item" role="presentation"><a href="javascript:void(0)" aria-haspopup="true" id="ui-id-9" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Materiales de Instalación</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-4-1 first ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/adhesivos.html" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Adhesivos</span></a></li><li class="level2 nav-1-4-2 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/boquillas.html" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Boquillas</span></a></li><li class="level2 nav-1-4-3 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/herramientas.html" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Accesorios de instalación</span></a></li><li class="level2 nav-1-4-4 ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/materiales-especializados.html" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Materiales especializados</span></a></li><li class="level2 nav-1-4-5 last ui-menu-item" role="presentation"><a data-test="2" href="https://interceramic.com/mx/productos/materiales-de-instalacion-y-cuidados/mantenimiento-y-cuidado.html" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mantenimiento y cuidado</span></a></li></ul></li></ul></li><li class="level0 nav-2 level-top ui-menu-item" role="presentation"><a data-test="0" href="https://interceramic.com/mx/perfilamiento/estilo/index" class="level-top ui-corner-all" id="ui-id-3" tabindex="-1" role="menuitem"><span>Encuentra tu estilo</span></a></li><li class="level0 nav-3 level-top ui-menu-item" role="presentation"><a data-test="0" href="inspiracion/index.html" class="level-top ui-corner-all" id="ui-id-4" tabindex="-1" role="menuitem"><span>Inspiración</span></a></li><li class="level0 nav-4 last level-top ui-menu-item" role="presentation"><a data-test="0" href="https://interceramic.com/mx/general_blog.html" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Blog</span></a></li> </ul>
+</nav>
+</div>
+<div class="section-item-title nav-sections-item-title" data-role="collapsible" role="tab" data-collapsible="true" aria-controls="store.links" aria-selected="false" aria-expanded="false" tabindex="0">
+<a class="nav-sections-item-switch" data-toggle="switch" href="https://interceramic.com/mx/#store.links">Cuenta</a>
+</div>
+<div class="section-item-content nav-sections-item-content" id="store.links" data-role="content" role="tabpanel" aria-hidden="true" style="display: none;"><ul class="header links"><div id="linkwishlist" class="link wishlist">
+<a class="icon-heart" title="Ver lista de favoritos" href="https://interceramic.com/mx/wishlist/">
+</a>
+</div>
+
+<li class="authorization-link" data-label="or">
+<a href="https://interceramic.com/mx/customer/account/login/referer/aHR0cHM6Ly9pbnRlcmNlcmFtaWMuY29tL214Lw%2C%2C/">
+Ingresar </a>
+</li>
+<li><a href="https://interceramic.com/mx/customer/account/" class="custom-account-link">Mi cuenta</a></li> <li class="greet welcome" data-bind="scope: &#39;customer&#39;">
+<!-- ko if: customer().fullname  --><!-- /ko -->
+<!-- ko ifnot: customer().fullname  -->
+<span data-bind="html:&quot;¡Bienvenid@!&quot;">¡Bienvenid@!</span>
+<!-- /ko -->
+</li>
+
+</ul><ul class="header links"></ul></div>
+</div>
+</div>
+<div>
+<div class="widget block block-static-block">
+<div class="widget block block-static-block">
+<div id="chatIcon" style="cursor: pointer; position: fixed; transition: all 1s linear; top: 25%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 1000; right: 0; padding-right: 5px;" onclick="toggle_ChatVisibility(&#39;chatIcon&#39;); toggle_ChatVisibility(&#39;chatContainer&#39;);"><img src="./index_files/Chat-p_gina-web.png" alt="Imagen Chat magento" width="70" height="70"></div>
+<div id="chatContainer" style="position: fixed; transition: all 1s linear; top: 5%; z-index: 1009; right: -380px; width: 380px; background-color: white; height: 550px; display: block; border: 5px solid #ed1c24;"></div>
+</div>
+<style type="text/css" xml="space"><!--
+    #chatIcon.chat-moved {
+        right: 375px !important;
+    }
+    #chatContainer.chat-moved {
+        right: 0 !important;
+    }
+--></style>
+<script type="text/javascript" xml="space">// <![CDATA[
+    function toggle_ChatVisibility(id) {
+      /* var e = document.getElementById(id);
+       if(e.classList.contains('chat-moved')) {
+          e.classList.remove('chat-moved');
+       } else {
+          e.classList.add('chat-moved');
+       }*/
+       if(id=='chatContainer') {
+		   jQuery('<div/>').html('¿Desea comunicarse con un agente?').modal({
+				title: '',
+                autoOpen: true,
+               autoClose: true,
+                closed: function () {},
+                buttons: [{
+                        text: 'Aceptar',
+                        'class': 'action-primary',
+                        click: function (dialog) {
+
+                            var response = '';
+                            jQuery.ajax({ type: "GET",
+									 url: "/chat/index/index",
+									 async: false,
+									 data: {'current_page_title': document.title},
+									 success : function(text)
+									 {
+										 response = text;
+										 var newWindow = window.open(response, 'Right Now', 'scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,height=540px, width= 370px');
+jQuery('.CancelButtonPopUp').click();
+										 //e.innerHTML = '<iframe src="' + response + '" frameborder="0" width="370px" height="540px"></iframe>';
+										 //e.classList.add('loaded');
+									 }
+							});
+                        }
+                    },{
+			text: 'Cancelar',
+                       attr: {
+                            'data-action': 'confirm'
+                        },
+                        'class': 'action-primary CancelButtonPopUp',
+					  action: function(dialog) {
+						dialog.close();
+					  }
+					}]
+					});
+
+			  }
+       }
+// ]]></script> </div>
+</div>
+<div class="custom-slider">
+<div class="owl-carousel-custom-1 owl-carousel owl-theme owl-loaded">
+
+
+
+
+
+
+<div class="owl-stage-outer owl-height" style="height: 463px;"><div class="owl-stage" style="transform: translate3d(-7590px, 0px, 0px); transition: all 0s ease 0s; width: 10120px;"><div class="owl-item cloned" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-8">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr6_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr6_1.jpg" class="owl-lazy" src="./index_files/carr6_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/9194/inspira/916/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-3">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr1_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr1_1.jpg" class="owl-lazy" src="./index_files/carr1_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/1315/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-4">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr2-_1_.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr2-_1_.jpg" class="owl-lazy" src="./index_files/carr2-_1_.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/2270/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-5">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr3_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr3_1.jpg" class="owl-lazy" src="./index_files/carr3_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/2482/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-6">
+ <span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr4_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr4_1.jpg" class="owl-lazy" src="./index_files/carr4_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/7220/inspira/913/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-7">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr5_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr5_1.jpg" class="owl-lazy" src="./index_files/carr5_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/7164/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item active" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-8">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr6_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr6_1.jpg" class="owl-lazy" src="./index_files/carr6_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/9194/inspira/916/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div><div class="owl-item cloned" style="width: 1265px; margin-right: 0px;"><div class="banner-item banner-3">
+<span class="banner-image">
+<img alt="" title="" data-src="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr1_1.jpg" data-src-retina="https://interceramic.com/media/weltpixel/owlcarouselslider/images/c/a/carr1_1.jpg" class="owl-lazy" src="./index_files/carr1_1.jpg" style="opacity: 1;">
+</span>
+<div class="content_slider">
+<span class="banner-description">Remodelar con Interceramic es simplemente lo mejor</span>
+<div class="buttons">
+<a class="action primary" href="https://interceramic.com/mx/ambientes/detalle/index/ambiente/1315/" target="_self"> Más Información </a>
+</div>
+</div>
+</div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="">prev</div><div class="owl-next" style="">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div></div>
+<div id="pre-div" style="display: none;">
+<div class="cssload-loader">
+<div class="cssload-inner cssload-one"></div>
+<div class="cssload-inner cssload-two"></div>
+<div class="cssload-inner cssload-three"></div>
+</div>
+</div>
+</div>
+<script>
+        require(['jquery', 'owl_carousel', 'owl_config' ],
+            function ($) {
+                $(document).ready(function() {
+
+                    var slider_id = 1;
+                    var slider_config = {"title":"Slide","show_title":"0","status":"1","nav":"1","dots":"1","center":"1","items":"1","loop":"1","margin":"0","merge":null,"URLhashListener":null,"stagePadding":"0","lazyLoad":"1","transition":"fadeOut","autoplay":"1","autoplayTimeout":"5000","autoplayHoverPause":"1","autoHeight":"1","nav_brk1":"1","items_brk1":"1","nav_brk2":"1","items_brk2":"1","nav_brk3":"1","items_brk3":"1","nav_brk4":"1","items_brk4":"1"};
+
+                    var items = ((slider_config.items >= 0 && slider_config.items != null) ? slider_config.items : 1);
+                    if(slider_config.transition != 'slide') {
+                        items = 1;
+                    }
+
+                    var stagePadding = slider_config.stagePadding != '' ? parseInt(slider_config.stagePadding) : 0;
+                    var animate_Out = slider_config.transition != 'fadeOut' ? true : false;
+
+                    /** Lazyload bug when fewer items exist in the carousel then the ones displayed */
+                    $('.owl-carousel-custom-'+slider_id).on('initialized.owl.carousel', function(event){
+                        var scopeSize = event.page.size;
+                        for (var i = 0; i < scopeSize; i++){
+                            var imgsrc = $(event.target).find('.owl-item').eq(i).find('img').attr('data-src');
+                            $(event.target).find('.owl-item').eq(i).find('img').attr('src', imgsrc);
+                            $(event.target).find('.owl-item').eq(i).find('img').attr('style', 'opacity: 1;');
+                        }
+                    });
+
+                    $('.owl-carousel-custom-'+slider_id).owlCarousel({
+                        nav               :parseInt(slider_config.nav) == 1 ? true : false,
+                        dots              :parseInt(slider_config.dots) == 1 ? true : false,
+                        center            :(slider_config.center == 1 && animate_Out) ? true : false,
+                        items             :items,
+                        loop              :parseInt(slider_config.loop) == 1 ? true : false,
+                        margin            :(slider_config.margin != '' && animate_Out) ? parseInt(slider_config.margin) : 0,
+                        stagePadding      :parseInt(slider_config.center) == 1 ? 0 : stagePadding,
+                        lazyLoad          :parseInt(slider_config.lazyLoad) == 1 ? true : false,
+                        autoplay          :parseInt(slider_config.autoplay) == 1 ? true : false,
+                        autoplayTimeout   :(parseInt(slider_config.autoplayTimeout) > 0 && slider_config.autoplayTimeout != null) ? parseInt(slider_config.autoplayTimeout) : 3000,
+                        autoplayHoverPause:parseInt(slider_config.autoplayHoverPause) == 1 ? true : false,
+                        autoHeight        :parseInt(slider_config.autoHeight) == 1 ? true : false,
+                        animateOut        :slider_config.transition == 'slide' ? false : slider_config.transition,
+
+
+                        responsive:{
+                            0:{
+                                nav     :parseInt(slider_config.nav_brk1) == 1 ? true : false,
+                                items   :parseInt(slider_config.items_brk1  >= 0 ? slider_config.items_brk1 : 0),
+                            },
+                            481:{
+                                nav     :parseInt(slider_config.nav_brk2) == 1 ? true : false,
+                                items   :parseInt(slider_config.items_brk2  >= 0 ? slider_config.items_brk2 : 0),
+                            },
+                            769:{
+                                nav     :parseInt(slider_config.nav_brk3) == 1 ? true : false,
+                                items   :parseInt(slider_config.items_brk3  >= 0 ? slider_config.items_brk3 : 0),
+                            },
+                            1280:{
+                                nav     :parseInt(slider_config.nav_brk4) == 1 ? true : false,
+                                items   :parseInt(slider_config.items_brk4  >= 0 ? slider_config.items_brk4 : 0),
+                            }
+                        }
+                    });
+
+                    $('.owl-carousel-custom-'+slider_id).on('resized.owl.carousel', function (event) {
+                        var $that = $(this);
+                        setTimeout(function(){
+                            $that.find('.owl-height').css('height', $that.find('.owl-item.active').height());
+                        }, 100);
+                    });
+
+                    setTimeout(function(){
+                        var $that = $('.owl-carousel-custom-'+slider_id);
+                        $that.find('.owl-height').css('height', $that.find('.owl-item.active').height());
+                    }, 100);
+
+                });
+            });
+    </script>
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="page messages"><div data-placeholder="messages"></div>
+<div data-bind="scope: &#39;messages&#39;">
+<!-- ko if: cookieMessages && cookieMessages.length > 0 --><!-- /ko -->
+<!-- ko if: messages().messages && messages().messages.length > 0 --><!-- /ko -->
+</div>
+
+</div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="8WBoV5GI2hqYzI65"><div id="authenticationPopup" data-bind="scope:&#39;authenticationPopup&#39;" style="display: none;">
+<script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/interceramic.com\/mx\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/interceramic.com\/mx\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/interceramic.com\/mx\/"};
+    </script>
+<!-- ko template: getTemplate() -->
+
+<!-- /ko -->
+
+</div>
+
+
+
+<div id="warrantyPopup" data-bind="scope:&#39;warrantyPopup&#39;" style="display: none;">
+<script>
+        window.warrantyPopup = {"checkoutUrl":"https:\/\/interceramic.com\/mx\/checkout\/","isAllowed":"false","alertMessage":null,"warrantyPageUrl":"https:\/\/interceramic.com\/mx\/productlist\/product\/","baseUrl":"https:\/\/interceramic.com\/mx\/"};
+    </script>
+<!-- ko template: getTemplate() -->
+<!-- /ko -->
+
+</div>
+
+
+<p></p><div>
+<div class="widget block block-static-block">
+<p><script type="text/javascript">
+    require(["jquery", "Magento_Ui/js/modal/modal"], function ($, modal) {
+        var text = 'Estimado usuario, este sitio esta optimizado para navegadores Chrome, Firefox o Safari, por lo que recomendamos utilizar un navegador de los antes mencionados para tener una experiencia optima.';
+        /**
+         * detect IE
+         * returns version of IE or false, if browser is not Internet Explorer
+         */
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                // IE 10 or older => return version number
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                // IE 11 => return version number
+                var rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+
+            var edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                // Edge (IE 12+) => return version number
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+
+            // other browser
+            return false;
+        }
+        if (detectIE()) {
+            $('<div/>').html(text).modal({
+                title: 'Aviso',
+                autoOpen: true,
+                escapeClose: true,
+                clickClose: true,
+                showClose: true
+            });
+        }
+    });
+</script> </p>
+<p></p>
+
+<div class="container space">
+<div class="row">
+<div class="col-12 col-md-4">
+<h1><span style="font-size: xx-large;">Espacios</span></h1>
+</div>
+<div class="col-12 col-md-8">
+<h4>¡Recorre nuestros espacios e inspírate!</h4>
+<p class="d-none d-sm-block">Tenemos infinidad de ideas para tu nuevo proyecto. Combinaciones únicas para pisos, paredes, baños y cocinas. No importa si buscas ideas sobre colores o texturas, interiores o exteriores, tenemos una opción diferente para cada ambiente con nuestros productos. Con Interceramic lograrás hacer de tus espacios, simplemente lo mejor.</p>
+</div>
+</div>
+</div>
+<div class="container work esp-desk">
+<div class="row">
+<div class="col-md-4">
+<div class="row">
+<div class="col-md-12 work-column"><img class="img-cap" src="./index_files/inter-areas.jpg" alt="">
+<div class="caption2">
+<div class="text">
+<h2>Áreas comunes</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/Areas-comunes">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text-2">Áreas comunes</h3>
+</div>
+<div class="col-md-12 work-column-esp"><img class="img-cap" src="./index_files/inter-recamara.jpg" alt="">
+<div class="caption2">
+<div class="text">
+<h2>Recámaras</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/recamaras">Ver Detalle</a></div>
+</div>
+</div>
+<h3 class="inner-text-2">Recámaras</h3>
+</div>
+</div>
+<div class="col-md-8">
+<div class="row">
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-bano.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Baños</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/banos">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Baños</h3>
+</div>
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-cocina.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Cocinas</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/cocinas">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Cocinas</h3>
+</div>
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-comedor.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Comedores</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/comedores">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Comedores</h3>
+</div>
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-exteriores.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Exteriores</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/exteriores">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Exteriores</h3>
+</div>
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-sala.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Salas</h2>
+<a class="btn btn-interceramic-2" href="https://interceramic.com/mx/ambientes/inspiracion/salas-de-estar">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Salas</h3>
+</div>
+<div class="col-md-6 work-column"><img class="img-cap-2" src="./index_files/inter-uso-comercial.jpg" alt="">
+<div class="caption">
+<div class="text">
+<h2>Uso comercial</h2>
+<a href="https://interceramic.com/mx/ambientes/inspiracion/uso-comercial">Ver Detalle</a></div>
+</div>
+<h3 class="inner-text">Exteriores</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p></p>
+
+<div class="container-fluid space esp-mob work">
+<div class="row">
+<div class="col-6 work-column-mob">
+<div class="row row-left">
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/areas-comunes" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-areas-2.jpg" width="650" height="650"></a>
+<h3 class="txt-esp">Áreas comunes</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/cocinas" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-cocina-2.jpg" width="650" height="650"></a>
+<h3 class="txt-esp">Cocina</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/comedores" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-comedor-2.jpg" width="650" height="650"></a>
+<h3 class="txt-esp">Comedor</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/salas-de-estar" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-sala.jpg"></a>
+<h3 class="txt-esp">Sala</h3>
+</div>
+</div>
+</div>
+<div class="col-6 work-column-mob">
+<div class="row row-right">
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/banos"><img class="img-cap-mob img-fluid" src="./index_files/inter-bano-2.jpg"></a>
+<h3 class="txt-esp">Baño</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/exteriores" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-exteriores-2.jpg"></a>
+<h3 class="txt-esp">Exteriores</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/recamaras" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-recamara-2.jpg"></a>
+<h3 class="txt-esp">Recámaras</h3>
+</div>
+<div class="col-12 text-center"><a href="https://interceramic.com/mx/ambientes/inspiracion/uso-comercial" target="_self"><img class="img-cap-mob img-fluid" src="./index_files/inter-uso-comercial.jpg"></a>
+<h3 class="txt-esp">Uso comercial</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+<p></p>
+<p></p><div>
+<div class="widget block block-static-block">
+<p></p>
+
+<p></p><div class="widget block block-banners" data-bind="scope: &#39;banner&#39;" data-banner-id="7d68231b7c73a8551b5998144d669e85" data-types="" data-display-mode="salesrule" data-ids="" data-rotate="series" data-store-id="1">
+<ul class="banner-items">
+<!-- ko foreach: getItems7d68231b7c73a8551b5998144d669e85() --><!-- /ko -->
+</ul>
+</div>
+
+<p></p>
+<div class="container-fluid">
+<div class="row" style="height: auto;">
+<div style="width: 50%;"><a href="https://interceramic.com/mx/instalaygana/" target="_blank"><img src="./index_files/IC_BannerWeb_515x435-01.jpg" alt="Instala y gana" width="1073" height="907"></a></div>
+<div style="width: 50%;"><a href="https://interceramic.com/mx/combinaciones-perfectas/" target="_self"><img src="./index_files/INTERCERAMIC_MARZO_ABRIL_BANNER_515x435_NACIONAL.PNG" alt="Promocion interceramic Fest" width="515" height="435"></a></div>
+</div>
+</div> </div>
+</div>
+<p></p>
+<p></p><div>
+<div class="widget block block-static-block">
+</div>
+</div>
+<p></p>
+<p></p><div>
+<div class="widget block block-static-block">
+</div>
+</div>
+<p></p>
+<p></p><div>
+<div class="widget block block-static-block">
+<p><link href="./index_files/video-js.css" rel="stylesheet"></p>
+
+
+
+<div class="container">
+<div class="row space-2">
+<div class="col-12" style="padding-bottom: 20px;">
+<h3>¿Por qué Interceramic?</h3>
+</div>
+<div class="col-6 col-md-3 mx-auto d-block text-center">
+<div class="icon-tech"></div>
+<h4>Tecnología</h4>
+</div>
+<div class="col-6 col-md-3 mx-auto d-block text-center">
+<div class="icon-exp"></div>
+<h4>Experiencia</h4>
+</div>
+<div class="col-6 col-md-3 mx-auto d-block text-center">
+<div class="icon-qua"></div>
+<h4>Calidad</h4>
+</div>
+<div class="col-6 col-md-3 mx-auto d-block text-center">
+<div class="icon-del"></div>
+<h4>Distribución</h4>
+</div>
+</div>
+<div class="row space">
+<div class="col-12 col-md-7 embed-responsive embed-responsive-16by9"><video id="my-video" width="642" height="350" class="video-js" controls="controls" preload="none" poster="https://i.ytimg.com/vi/MzQQSm6EHSE/maxresdefault.jpg" data-setup="{}"><source src="https://tinyurl.com/yyx3dqqc" type="video/mp4"><source src="https://tinyurl.com/yyx3dqqc" type="video/webm"><p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video></div>
+
+<div class="col-12 col-md-4 title_quote">
+<div class="inter_quote"><br>
+<h3 style="letter-spacing: .1em;"><b>Interceramic</b></h3>
+</div>
+<div>
+<p class="txt-quote">"Siempre a la vanguardia en diseño e innovación, con productos de la más alta calidad a nivel mundial para superar las expectativas de nuestros clientes.”</p>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</div>
+<p></p>
+<p></p><div>
+<div class="widget block block-static-block">
+
+<div class="container">
+<div class="row">
+<div class="col-6 col-md-4 proyect"><a href="https://interceramic.com/mx/mi-proyecto/"> <img class="img-proyect" src="./index_files/mi_proyecto.jpg"> <img class="img-fluid red-box" src="./index_files/icon-proyecto.png" alt=""></a>
+<h3 class="gray-border">Mi proyecto</h3>
+</div>
+<div class="col-6 col-md-4 proyect"><a href="https://interceramic.com/mx/apps-moviles/"> <img class="img-proyect" src="./index_files/mi_espacio.jpg"> <img class="img-fluid red-box" src="./index_files/icon-espacio.png" alt=""></a>
+<h3 class="gray-border">Apps móviles</h3>
+</div>
+<div class="col-12 col-md-4 proyect recomendations-desk"><a href="https://interceramic.com/mx/recomendaciones/"> <img class="img-proyect" src="./index_files/recomendaciones.jpg"> <img class="img-fluid red-box" src="./index_files/icon-recomendaciones.png" alt=""></a>
+<h3 class="gray-border">Recomendaciones</h3>
+</div>
+<div class="col-12 col-md-4 proyect recomendations-mob"><a href="https://interceramic.com/mx/recomendaciones/"> <img class="img-proyect" src="./index_files/recomendaciones.jpg"> <img class="img-fluid red-box-mob" src="./index_files/icon-recomendaciones.png" alt=""></a>
+<h3 class="gray-border">Recomendaciones</h3>
+</div>
+</div>
+</div>
+ </div>
+</div>
+<p></p>
+<div class="container">
+<div class="row"><div class="blog-widget-title"><a></a></div>
+<div class="post-list-container mpcss" id="mpblog-list-container">
+<div class="widget-title">
+<a href="https://interceramic.com/mx/general_blog.html">Blog</a>
+</div>
+<div class="row">
+<div class="post-list-item col-sm-4 col-xs-4">
+<div class="post-item-wraper">
+<div class="post-image">
+<a href="https://interceramic.com/mx/general_blog/post/pisos-de-madera-ceramica-estilo-natural.html">
+<img class="img-responsive" style="height: 220px" src="./index_files/amb_8521_1024x768.jpg" alt="Logra un estilo natural con pisos de madera cerámica ">
+</a>
+</div>
+<div class="post-info-wraper">
+ <h2 class="mp-post-title">
+<a class="post-link-title" title="Logra un estilo natural con pisos de madera cerámica " href="https://interceramic.com/mx/general_blog/post/pisos-de-madera-ceramica-estilo-natural.html">
+Logra un estilo natural con pisos de madera cerámica </a>
+</h2>
+<div class="mp-post-info">
+Publicado en abril 08, 2019| Publicado en <a class="mp-info" href="https://interceramic.com/mx/general_blog/category/interiorismo.html">Interiorismo</a> </div>
+<div class="post-short-description">
+<p>Los pisos de madera cerámica pueden dar un estilo único en tu hogar. Aquí te decimos cómo elegir los mejores.</p>
+</div>
+<div class="mp-clearfix"></div>
+<div class="mp-post-meta-info mp-alignright">
+<div class="actions">
+<a class="mp-read-more" href="https://interceramic.com/mx/general_blog/post/pisos-de-madera-ceramica-estilo-natural.html" title="Leer más">Leer más<span class="icon-right-arrow-inter"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="post-list-item col-sm-4 col-xs-4">
+<div class="post-item-wraper">
+<div class="post-image">
+<a href="https://interceramic.com/mx/general_blog/post/piso-ceramico-vs-piso-laminado.html">
+<img class="img-responsive" style="height: 220px" src="./index_files/amb_8930_1024x768.jpg" alt="Piso cerámico vs. Piso laminado">
+</a>
+</div>
+<div class="post-info-wraper">
+<h2 class="mp-post-title">
+<a class="post-link-title" title="Piso cerámico vs. Piso laminado" href="https://interceramic.com/mx/general_blog/post/piso-ceramico-vs-piso-laminado.html">
+Piso cerámico vs. Piso laminado </a>
+</h2>
+<div class="mp-post-info">
+Publicado en abril 08, 2019| Publicado en <a class="mp-info" href="https://interceramic.com/mx/general_blog/category/interiorismo.html">Interiorismo</a>, <a class="mp-info" href="https://interceramic.com/mx/general_blog/category/proyectos.html">Proyectos</a> </div>
+<div class="post-short-description">
+<p>Si todavía no decides que piso poner en tu casa aquí comparamos 2 grandes opciones: piso cerámico vs piso laminado</p>
+</div>
+<div class="mp-clearfix"></div>
+<div class="mp-post-meta-info mp-alignright">
+<div class="actions">
+<a class="mp-read-more" href="https://interceramic.com/mx/general_blog/post/piso-ceramico-vs-piso-laminado.html" title="Leer más">Leer más<span class="icon-right-arrow-inter"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="post-list-item col-sm-4 col-xs-4">
+<div class="post-item-wraper">
+<div class="post-image">
+<a href="https://interceramic.com/mx/general_blog/post/5-lavabos-con-mucho-estilo-para-tu-ba-o.html">
+<img class="img-responsive" style="height: 220px" src="./index_files/amb_8303_1024x768.jpg" alt="5 lavabos con mucho estilo para tu baño ">
+</a>
+</div>
+<div class="post-info-wraper">
+<h2 class="mp-post-title">
+<a class="post-link-title" title="5 lavabos con mucho estilo para tu baño " href="https://interceramic.com/mx/general_blog/post/5-lavabos-con-mucho-estilo-para-tu-ba-o.html">
+5 lavabos con mucho estilo para tu baño </a>
+</h2>
+<div class="mp-post-info">
+Publicado en abril 08, 2019| Publicado en <a class="mp-info" href="https://interceramic.com/mx/general_blog/category/proyectos.html">Proyectos</a> </div>
+<div class="post-short-description">
+<p>Te mostramos 5 lavabos de diferentes tipos que podrán darle mucho estilo a tu baño.</p>
+</div>
+<div class="mp-clearfix"></div>
+<div class="mp-post-meta-info mp-alignright">
+<div class="actions">
+<a class="mp-read-more" href="https://interceramic.com/mx/general_blog/post/5-lavabos-con-mucho-estilo-para-tu-ba-o.html" title="Leer más">Leer más<span class="icon-right-arrow-inter"></span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mx-auto d-block"><a class="btn btn-interceramic" href="https://interceramic.com/general_blog.html">Visita nuestro blog</a></div>
+</div>
+</div>
+<p></p><div>
+<div class="widget block block-static-block">
+
+<div class="container space">
+<div class="row space">
+<div class="col-12 text-center">
+<h3>Consulta o descarga nuestros<br>catálogos digitales</h3>
+</div>
+<style>
+.row,.space{
+    position: relative !important;
+    overflow:hidden;
+
+}
+.c_prev, .c_next {
+    position: absolute;
+    top:50%;
+    z-index: 999;
+    padding: 1.5% 1.5%;
+    display: block;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+/* Position the "next button" to the right */
+.c_prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.c_next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.c_prev.disabled,
+.c_next.disabled{
+  background: #00000045;
+  cursor: default;
+  opacity: .3;
+}
+.c_prev.disabled:hover,
+.c_next.disabled:hover {
+  opacity: .3 !important;
+}
+/* On hover, add a black background color with a little bit see-through */
+.c_prev:not(.disabled):hover, .c_next:not(.disabled):hover {
+    opacity: .8 !important;
+}
+@media only screen and (max-width: 300px) {
+  .c_prev, .c_next {font-size: 30px}
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+.hide_slide_catalog{
+    display: none;
+}
+
+</style>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/libro_de_ceramicas_2019/index.html&#39;)" src="./index_files/shot.jpg" alt="Libro de ceramicas 2019">
+</div>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/lanzamientos_2019_/index.html&#39;)" src="./index_files/shot(1).jpg" alt="Lanzamientos 2019 ">
+</div>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/cat_logo_trilogy/index.html&#39;)" src="./index_files/shot(2).jpg" alt="Catálogo trilogy">
+</div>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/cat_logo_abisa_2018/index.html&#39;)" src="./index_files/shot(3).jpg" alt="Catálogo abisa 2018">
+</div>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/muebles_de_ba_o_y_cocina/index.html&#39;)" src="./index_files/shot(4).jpg" alt="Muebles de baño y cocina">
+</div>
+<div class="col-12 col-md-3 col-sm-6 mx-auto cat-temp hide_slide_catalog hide_slide_catalog_mob">
+<img style="cursor:pointer;" onclick="window.open(&#39;https://interceramic.com/media/interceramic/downloadable/catalogs/guia_de_cuidados/index.html&#39;)" src="./index_files/shot(5).jpg" alt="Guia de cuidados">
+</div>
+<span class="c_prev disabled" data-slide="prev">‹</span>
+<span class="c_next" data-slide="next">›</span>
+<div class="mx-auto d-block" style="text-align: center;"><a class="btn btn-interceramic" id="ver_todos" href="https://interceramic.com/mx/catalogos/todos/">Ver todos los catálogos</a></div>
+<script>
+require([
+    'jquery'
+], function ($) {
+    "use strict";
+
+    $(document).on('ready',function(){
+        var start = 0;
+        var end = 3;
+        var slides = $('.row.space .cat-temp')
+        var slides_size = slides.length - 1
+        var order = [0,1,2,3];
+        var windowSize = $(window).width();
+
+        function plusSlides(n) {
+            var dir = '';
+            if(n>0){
+                end = end == slides_size ? 0 : end+1
+                start++
+                dir = 'right'
+            }else{
+                start = start == 0 ? slides_size : start-1
+                end--
+                dir = 'left'
+            }
+            showSlides(dir);
+        }
+
+        function showSlides(dir){
+            if(order){
+                if(dir == 'left'){
+                    order.pop()
+                    order.unshift(start)
+                }else if(dir == 'right'){
+                    order.shift();
+                    order.push(end);
+                }
+            }
+
+            $('.row.space .cat-temp').each(function(){
+                $(this).addClass("hide_slide_catalog")
+            })
+
+            for (var i = 0; i < order.length; i++) {
+                slides[order[i]].classList.remove("hide_slide_catalog")
+            }
+
+            if($('.row.space .cat-temp').length > 4){
+                if(start == 0){
+                    $('.c_prev').addClass('disabled')
+                }else{
+                    $('.c_prev').removeClass('disabled')
+                }
+
+                if(end == slides_size){
+                    $('.c_next').addClass('disabled')
+                }else{
+                    $('.c_next').removeClass('disabled')
+                }
+            }
+        }
+
+        $('.c_next').on('click',function(){
+            if(!$(this).hasClass('disabled')){
+                plusSlides(1)
+            }
+        })
+        $('.c_prev').on('click',function(){
+            if(!$(this).hasClass('disabled')){
+                plusSlides(-1)
+            }
+        })
+
+        showSlides();
+    })
+});
+</script>
+<script>
+require([
+    'jquery'
+], function ($) {
+    "use strict";
+
+    $(document).on('ready',function(){
+        var start = 0;
+        var end = 1;
+        var slides = $('.row.space .cat-temp_mob')
+        var slides_size = slides.length - 1
+        var order = [0,1];
+        var windowSize = $(window).width();
+
+        function plusSlides(n) {
+            var dir = '';
+            if(n>0){
+                end = end == slides_size ? 0 : end+1
+                start++
+                dir = 'right'
+            }else{
+                start = start == 0 ? slides_size : start-1
+                end--
+                dir = 'left'
+            }
+            showSlides(dir);
+        }
+
+        function showSlides(dir){
+            if(order){
+                if(dir == 'left'){
+                    order.pop()
+                    order.unshift(start)
+                }else if(dir == 'right'){
+                    order.shift();
+                    order.push(end);
+                }
+            }
+
+            $('.row.space .cat-temp').each(function(){
+                $(this).addClass("hide_slide_catalog_mob")
+            })
+
+            for (var i = 0; i < order.length; i++) {
+                slides[order[i]].classList.remove("hide_slide_catalog_mob")
+            }
+
+            if($('.row.space .cat-temp_mob').length > 1){
+                if(start == 0){
+                    $('.c_prev').addClass('disabled')
+                }else{
+                    $('.c_prev').removeClass('disabled')
+                }
+
+                if(end == slides_size){
+                    $('.c_next').addClass('disabled')
+                }else{
+                    $('.c_next').removeClass('disabled')
+                }
+            }
+        }
+
+        $('.c_next').on('click',function(){
+            if(!$(this).hasClass('disabled')){
+                plusSlides(1)
+            }
+        })
+        $('.c_prev').on('click',function(){
+            if(!$(this).hasClass('disabled')){
+                plusSlides(-1)
+            }
+        })
+
+        showSlides();
+    })
+});
+</script>
+</div>
+</div> </div>
+</div>
+<p></p>
+<p style="text-align: justify;"><span>“En Interceramic valoramos tu seguridad, y te reiteramos que nosotros sólo vendemos los productos de pisos, azulejos, materiales de instalación, muebles para baño, cocina y artículos complementarios que se distribuyen en nuestros más de 300 centros de venta a nivel nacional. Nunca te pediremos que hagas depósitos o transferencias para comprar algún producto que no pertenezca a los antes mencionados, y que no sea a través de nuestra red de Tiendas Interceramic o en el dominio único www.interceramic.com. Cualquier duda puedes contactarnos al 01800-7251010”.</span></p></div></div></main><div class="page-bottom"><div class="content"><div>
+<div class="widget block block-static-block">
+<div class="cotizador">
+<div class="content">
+<div class="widget block block-static-block">
+<div class="full-cot">
+<div class="box-1"><span class="custom-tooltip-3"> <span class="icon-question tooltip-toggle"></span> <span class="tooltip-content"> Visualiza aquí la cotización de productos que viste en tu tienda Interceramic</span> </span> <span><span> <span class="txt_cot">¿YA TE COTIZAMOS? </span> <button id="showcot" class="cot-movil" onclick="cot_open()"></button> <button id="hidecot" class="cot-close close" onclick="cot_close()"></button></span></span>
+<div id="form_cot" class="cont-form-cot"><input class="quot quotation-identifier" name="folio" type="text" placeholder="No. de cotización aquí"> <button class="send btn-send-quotation">Enviar</button></div>
+</div>
+<div class="box-3"><button class="btn-q btn-primary" style="background-color: transparent; border: none; display: block; margin: auto;" type="button" data-toggle="collapse" data-target="#demo"> <img class="arrow" title="arrow" src="./index_files/arrow.png" alt="" width="13" height="23"> <span class="icon-question"></span> <span>¿YA TE COTIZAMOS? </span> </button> <input class="quot" name="cot1" type="number" placeholder="No. de cotización aquí"> <button class="send">Enviar</button>
+<div class="container-fluid quoting">
+<div class="row">
+<div class="col-12">
+<div id="demo" class="collapse"><input class="quot-2" name="cot2" type="number" placeholder="No. de factura aquí"> <button class="send-2">Enviar</button></div>
+</div>
+</div>
+</div>
+</div>
+<div class="box-2"><span class="custom-tooltip-3"> <span class="icon-question tooltip-toggle"> <span class="tooltip-content"> Carga aquí tu factura y compra de manera automática el material que te haya faltado.</span> </span> </span> <span><span> <span class="txt_cot">¿VOLVER A COMPRAR UN PRODUCTO?</span> <button id="showshop" class="cot-movil" onclick="shop_open()"></button> <button id="hideshop" class="cot-close close" onclick="shop_close()"></button></span></span>
+<div id="shop_form" class="cont-form-cot"><input class="quot factura-identifier" name="factura_id" type="text" placeholder="No. de factura aquí"> <button class="send btn-send-factura" type="button">Enviar</button></div>
+</div>
+<div class="box-4"><button class="btn-q btn-primary" style="background-color: transparent; border: none;" type="button" data-toggle="collapse" data-target="#demo2"><span class="icon-question"></span> <span>¿VOLVER A COMPRAR UN PRODUCTO?</span></button> <input class="quot" name="cot1" type="number" placeholder="No. de cotización aquí"> <button class="send">Enviar</button>
+<div class="container-fluid quoting">
+<div class="row">
+<div class="col-12">
+<div id="demo2" class="collapse"><input class="quot-2" name="cot2" type="number" placeholder="No. de cotización aquí"> <button class="send-2">Enviar</button></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style type="text/css" xml="space"><!--
+.icon-question:before {
+	content: "\eaf7";
+}
+--></style> </div>
+</div>
+</div></div><footer class="page-footer"><div class="footer content"><div class="block newsletter">
+<div class="title"><strong>Newsletter</strong></div>
+<div class="content">
+<p class="txt-suscribe">Suscríbete al Newsletter</p>
+<form class="form subscribe" novalidate="novalidate" action="https://interceramic.com/mx/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+<div class="field newsletter">
+<label class="label" for="newsletter"><span>Suscríbase a Nuestro Envío:</span></label>
+<div class="control">
+<input name="email" type="email" id="newsletter" placeholder="Ingresa tu correo electrónico" data-validate="{required:true, &#39;validate-email&#39;:true}">
+</div>
+</div>
+<div class="actions">
+<button class="action subscribe primary" title="Suscribir" type="submit">
+<span class="icon-right-arrow-inter2"></span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<div class="links"><div>
+<div class="widget block block-static-block">
+<div class="container">
+<div class="row">
+<div class="col-12"><a href="https://la.kohler.com/es?country=MX" target="_self"> <img src="./index_files/logo-koler.png" alt="Imagen Kohler" width="135" height="30"></a></div>
+<br> <br>
+<div class="col-12 col-md-6">
+<ul class="footer links">
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/facturacion/">Facturación electrónica</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/inversionistas/">Inversionistas</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/prensa/">Prensa</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/storelocator/index/">Encuentra tu tienda</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/rastrea-tu-compra/">Rastrea tu compra</a></li>
+</ul>
+</div>
+<div class="col-12 col-md-6">
+<ul class="footer links">
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/bolsa-trabajo/">Bolsa de trabajo</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/fundacion-vida-digna/">Fundación Vida Digna</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/premiointerceramic/" target="_blank">Premio Interceramic</a></li>
+<li class="nav item footer-primary"><a href="https://interceramic.com/mx/responsabilidad-social/">Responsabilidad social</a></li>
+</ul>
+</div>
+</div>
+</div> </div>
+</div>
+</div><div class="social-media">
+<p class="txt-suscribe">Síguenos en:</p>
+<a href="https://www.facebook.com/interceramic.mx" target="_blank" class="icon-facebook icons-footer"></a>
+<a href="https://twitter.com/interceramicMX" target="_blank" class="icon-twitter icons-footer"></a>
+<a href="https://www.instagram.com/interceramicmx/" target="_blank" class="icon-instagram icons-footer"></a>
+<a href="https://www.pinterest.com.mx/interceramic/" target="_blank" class="icon-pinterest2 icons-footer"></a>
+</div>
+<div class="footer-stores">
+<div class="dropdown-footer">
+<span class="icon-earth"></span>
+<button onclick="myFunction()" class="dropbtn-footer">México
+</button>
+<div id="myDropdown" class="dropdown-content-footer">
+<a href="https://interceramic.com/mx">México</a>
+<a href="https://interceramic.com/gt">Guatemala</a>
+
+<a href="http://interceramicusa.com/">Estados Unidos</a>
+<a href="http://interceramicusa.com/">Canadá</a>
+<a href="http://www.icctc.cn/">China</a>
+</div>
+</div>
+</div>
+<script>
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+// Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        //if (!event.target.matches('.dropbtn-footer')) {
+		if(!document.getElementsByClassName('dropbtn-footer')[0].contains(event.target)){
+            var dropdowns = document.getElementsByClassName("dropdown-content-footer");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<script>
+    function zipcode_open() {
+        document.getElementById("code-zip").classList.toggle("show");
+    }
+    // Close code-zip
+    window.onclick = function (event) {
+        //if (!event.target.matches('.dropbtn-footer')) {
+        if(!document.getElementsByClassName('zip-code-movil')[0].contains(event.target)){
+            var wish = document.getElementsByClassName("linkwishlist");
+            var i;
+            for (i = 0; i < wish.length; i++) {
+                var topWish = wish[i];
+                if (topWish.classList.contains('topmore')) {
+                    topWish.classList.remove('topmore');
+                }
+            }
+        }
+    }
+</script>
+<script>
+    function zipcode_open() {
+        document.getElementById("code-zip").classList.toggle("show");
+        document.getElementById("code-zip").classList.remove("hide");
+        document.getElementById("showzip").classList.remove("open");
+        document.getElementById("showzip").classList.add("close");
+        document.getElementById("hidezip").classList.remove("close");
+        document.getElementById("hidezip").classList.add("open");
+        document.getElementById("linkwishlist").classList.add("topmore");
+    }
+    function zipcode_close() {
+        document.getElementById("code-zip").classList.toggle("hide");
+        document.getElementById("code-zip").classList.remove("show");
+        document.getElementById("hidezip").classList.remove("open");
+        document.getElementById("hidezip").classList.add("close");
+        document.getElementById("showzip").classList.remove("close");
+        document.getElementById("showzip").classList.add("open");
+        document.getElementById("linkwishlist").classList.remove("topmore");
+    }
+
+    function cot_open() {
+        document.getElementById("form_cot").classList.toggle("show");
+        document.getElementById("form_cot").classList.remove("hide");
+        document.getElementById("showcot").classList.remove("open");
+        document.getElementById("showcot").classList.add("close");
+        document.getElementById("hidecot").classList.remove("close");
+        document.getElementById("hidecot").classList.add("open");
+    }
+    function cot_close() {
+        document.getElementById("form_cot").classList.toggle("hide");
+        document.getElementById("form_cot").classList.remove("show");
+        document.getElementById("hidecot").classList.remove("open");
+        document.getElementById("hidecot").classList.add("close");
+        document.getElementById("showcot").classList.remove("close");
+        document.getElementById("showcot").classList.add("open");
+    }
+
+    function shop_open() {
+        document.getElementById("shop_form").classList.toggle("show");
+        document.getElementById("shop_form").classList.remove("hide");
+        document.getElementById("showshop").classList.remove("open");
+        document.getElementById("showshop").classList.add("close");
+        document.getElementById("hideshop").classList.remove("close");
+        document.getElementById("hideshop").classList.add("open");
+    }
+    function shop_close() {
+        document.getElementById("shop_form").classList.toggle("hide");
+        document.getElementById("shop_form").classList.remove("show");
+        document.getElementById("hideshop").classList.remove("open");
+        document.getElementById("hideshop").classList.add("close");
+        document.getElementById("showshop").classList.remove("close");
+        document.getElementById("showshop").classList.add("open");
+    }
+    function track_open() {
+        document.getElementById("track_form").classList.toggle("show");
+        document.getElementById("track_form").classList.remove("hide");
+        document.getElementById("showtrack").classList.remove("open");
+        document.getElementById("showtrack").classList.add("close");
+        document.getElementById("hidetrack").classList.remove("close");
+        document.getElementById("hidetrack").classList.add("open");
+    }
+    function track_close() {
+        document.getElementById("track_form").classList.toggle("hide");
+        document.getElementById("track_form").classList.remove("show");
+        document.getElementById("hidetrack").classList.remove("open");
+        document.getElementById("hidetrack").classList.add("close");
+        document.getElementById("showtrack").classList.remove("close");
+        document.getElementById("showtrack").classList.add("open");
+    }
+</script>
+<div class="switcher store switcher-store" id="switcher-store">
+<strong class="label switcher-label"><span>Seleccione Tienda</span></strong>
+<div class="actions dropdown options switcher-options">
+<div class="action toggle switcher-trigger" role="button" tabindex="0" data-toggle="dropdown" data-trigger-keypress-button="true" id="switcher-store-trigger" aria-haspopup="true" aria-expanded="false">
+<strong>
+<span>Mexico</span>
+</strong>
+</div>
+ <ul class="dropdown switcher-dropdown" data-target="dropdown" aria-hidden="true">
+<li class="switcher-option">
+<a href="https://interceramic.com/gt/?___from_store=mx">
+Guatemala </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/pa/?___from_store=mx">
+Panama </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWGT/?___from_store=mx">
+mx_202VWGT </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWME/?___from_store=mx">
+mx_202VWME </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWQR/?___from_store=mx">
+mx_202VWQR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWSL/?___from_store=mx">
+mx_202VWSL </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWTO/?___from_store=mx">
+mx_202VWTO </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_202VWZA/?___from_store=mx">
+mx_202VWZA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_203VWCO/?___from_store=mx">
+mx_203VWCO </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_203VWGD/?___from_store=mx">
+mx_203VWGD </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_203VWMR/?___from_store=mx">
+mx_203VWMR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_203VWNA/?___from_store=mx">
+mx_203VWNA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_204VWCH/?___from_store=mx">
+mx_204VWCH </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_204VWJU/?___from_store=mx">
+mx_204VWJU </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_204VWMX/?___from_store=mx">
+mx_204VWMX </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_205VWMT/?___from_store=mx">
+mx_205VWMT </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_205VWTM/?___from_store=mx">
+mx_205VWTM </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_206VWCA/?___from_store=mx">
+mx_206VWCA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_206VWCO/?___from_store=mx">
+mx_206VWCO </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_206VWVI/?___from_store=mx">
+mx_206VWVI </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_206VWVR/?___from_store=mx">
+mx_206VWVR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_206VWXL/?___from_store=mx">
+mx_206VWXL </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_255VWCU/?___from_store=mx">
+mx_255VWCU </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_257VWGP/?___from_store=mx">
+mx_257VWGP </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_268VWPB/?___from_store=mx">
+mx_268VWPB </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_204VWTJ/?___from_store=mx">
+mx_204VWTJ </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_205VWRY/?___from_store=mx">
+mx_205VWRY </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_205VWSA/?___from_store=mx">
+mx_205VWSA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_253VWHE/?___from_store=mx">
+mx_253VWHE </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_253VWNO/?___from_store=mx">
+mx_253VWNO </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_254VWCB/?___from_store=mx">
+mx_254VWCB </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_254VWLP/?___from_store=mx">
+mx_254VWLP </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_255VWOB/?___from_store=mx">
+mx_255VWOB </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_259VWDR/?___from_store=mx">
+mx_259VWDR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_259VWSN/?___from_store=mx">
+mx_259VWSN </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_265VWTP/?___from_store=mx">
+mx_265VWTP </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_266VWZM/?___from_store=mx">
+mx_266VWZM </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_272VWOX/?___from_store=mx">
+mx_272VWOX </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_275VWCT/?___from_store=mx">
+mx_275VWCT </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_276VWTG/?___from_store=mx">
+mx_276VWTG </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_277VWAG/?___from_store=mx">
+mx_277VWAG </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_277VWLE/?___from_store=mx">
+mx_277VWLE </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_278VWAC/?___from_store=mx">
+mx_278VWAC </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_278VWPR/?___from_store=mx">
+mx_278VWPR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_278VWPA/?___from_store=mx">
+mx_278VWPA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_279VWPN/?___from_store=mx">
+mx_279VWPN </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_270VWCA/?___from_store=mx">
+mx_270VWCA </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_271VWMR/?___from_store=mx">
+mx_271VWMR </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/mx_278VWCU/?___from_store=mx">
+mx_278VWCU </a>
+</li>
+<li class="switcher-option">
+<a href="https://interceramic.com/gt_602VWGT/?___from_store=mx">
+gt_602VWGT </a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+    require([
+        'Magento_Customer/js/customer-data'
+    ], function (customerData) {
+        var sections = ['cart'];
+        customerData.invalidate(sections);
+    });
+</script></div></footer>
+<div id="factura-modal" style="display: none;">
+<iframe src="./index_files/login.html" width="100%" height="100%"></iframe>
+</div>
+<script type="text/javascript">
+    require(["jquery", "Magento_Ui/js/modal/modal"], function ($, modal) {
+        if ($('.factura-identifier').length) {
+            $('.btn-send-factura').on('click',function(){
+                if(localStorage.zonificacion_) {
+                    var factura_id = $('.btn-send-factura').parent().children('.factura-identifier').val().trim();
+                    if (factura_id != '') {
+                        $(this).prop('disabled',true);
+                        $.ajax({
+                            showLoader: true,
+                            url: "https://interceramic.com/mx/factura/index/index/",
+                            data: {'factura_id': factura_id},
+                            type: 'post',
+                            dataType: 'json',
+                            global: false,
+                            success: function(res){
+
+                                if(res != null && !res.success) {
+                                    text = '';
+                                    if(Array.isArray(res.products)) {
+                                        $(res.products).each(function(key, value){
+                                            text += 'El producto ' + value + ' se agregó satisfactoriamente a tu carrito, aún no tenemos existencias suficientes en tu tienda. Cotízalo y visítanos o sé contactado por un asesor.<br/>';
+                                        });
+                                    }
+                                    $('<div/>').html(text).modal({
+                                        title: 'Producto sin Inventario',
+                                        autoOpen: true,
+                                        escapeClose: false,
+                                        clickClose: false,
+                                        showClose: false,
+                                        buttons: [{
+                                            text: 'Ser Contactado',
+                                            attr: {'data-action': 'confirm-dis'},
+                                            click: function () {
+                                                $.ajax({
+                                                    url: 'intercontact/stock',
+                                                    type: 'post',
+                                                    dataType: 'json',
+
+                                                    complete: function (data) {
+                                                        if (data.responseJSON.redirectURL == 'reload' || data.responseJSON.redirectURL == 'success') {
+                                                            location.reload();
+                                                        } else {
+                                                            window.location = data.responseJSON.redirectURL;
+                                                        }
+                                                        return;
+                                                    }
+                                                });
+                                            }
+                                        }, {
+                                            text: 'Continuar',
+                                            attr: {'data-action': 'add-to-cart-dis'},
+                                            click: function () {
+                                                //$('<div/>').modal('closeModal');
+                                                window.location = window.checkout.shoppingCartUrl;
+                                            }
+                                        }]
+                                    });
+                                }
+
+                                window.location.href = "https://interceramic.com/mx/checkout/cart/";
+                            }
+                        });
+                    }
+                } else {
+                    $('.zonificacion-cp-modal-background').removeClass('d-none');
+                }
+            });
+        }
+    });
+</script> <script type="text/javascript">
+    require(["jquery"], function ($) {
+		$('.reorder-action').on('click',function(){
+			var factura_id = $(this).attr('id').trim();
+            if (factura_id != '') {
+                $(this).prop('disabled',true);
+                $.ajax({
+                    url: "https://interceramic.com/mx/factura/index/index/",
+                    data: {'factura_id': factura_id},
+                    type: 'post',
+                    dataType: 'json',
+                    global: false,
+                    success: function(res){
+                        window.location.href = "https://interceramic.com/mx/checkout/cart/";
+                    }
+                });
+            }
+        });
+    });
+</script><script type="text/javascript">
+require(["jquery"], function ($) {
+  function addToCart(folio,ele){
+    if(localStorage.zonificacion_) {
+      if(ele) $(ele).prop('disabled',true);
+      $.ajax({
+        showLoader: true,
+        url: "https://interceramic.com/mx/quotation/add/cart/",
+        data: {'folio': folio},
+        type: 'post',
+        dataType: 'json',
+        success: function(res){
+          if(res.success) {
+            window.location.href = "https://interceramic.com/mx/checkout/cart/";
+          } else {
+            window.location.href = window.location.href;
+          }
+        }
+      });
+    } else {
+      $('.zonificacion-cp-modal-background').removeClass('d-none');
+    }
+  }
+
+  $('.send-folio').on('click',function(e){
+    e.preventDefault()
+    var folio = $(this).data('folio');
+    addToCart(folio)
+  });
+
+  if ($('.quotation-identifier').length) {
+    $('.btn-send-quotation').on('click',function(){
+      var folio = $('.btn-send-quotation').parent().children('.quotation-identifier').val().trim();
+        if (folio != '') {
+          addToCart(folio,this)
+        }
+    });
+  }
+});
+</script> <script id="form-tmpl-multiple" type="text/x-magento-template">
+    <form id="wishlist-hidden-form" method="post" action="<%- data.url %>" class="no-display">
+        <% if (data.itemId) { %>
+            <input name="item_id" value="<%- data.itemId %>">
+        <% } %>
+        <% if (data.wishlistId) { %>
+            <input name="wishlist_id" value="<%- data.wishlistId %>">
+        <% } %>
+        <% if (data.qty) { %>
+            <input name="qty" value="<%- data.qty %>">
+        <% } %>
+        <% if (data.item) { %>
+            <input name="item" value="<%- data.item %>">
+        <% } %>
+        <% if (data.entity) { %>
+            <input name="entity" value="<%- data.entity %>">
+        <% } %>
+        <% if (data.form_key) { %>
+            <input name="form_key" value="<%- data.form_key %>">
+        <% } %>
+    </form>
+</script>
+<script id="popup-tmpl" type="text/x-magento-template">
+    <div class="window wishlist overlay active"></div>
+    <div id="<%- data.popupWishlistBlockId %>" class="window wishlist popup active">
+        <div class="popup-actions">
+            <div class="secondary">
+                <button type="button"
+                        title="<%- window.jQuery.mage.__('Close') %>"
+                        class="action close <%- data.btnCloseClass %>"
+                        data-dismiss="popup">
+                    <span><%- window.jQuery.mage.__('Close') %></span>
+                </button>
+            </div>
         </div>
-      </div>
+        <div class="popup-header">
+             <strong class="title" id="popup-title">
+                 <span>
+                     <% if (data.isEdit) { %>
+                        <%- window.jQuery.mage.__('Edit Wish List') %>
+                     <% } else { %>
+                        <%- window.jQuery.mage.__('Create New Wish List') %>
+                     <% } %>
+                 </span>
+             </strong>
+        </div>
+        <div class="popup-content" id="popup-content">
+            <form id="<%- data.popupWishlistFormId %>" method="post" action="<%- data.url %>" class="form wishlist">
+                <input name="form_key" type="hidden" value="Grw7Zh9DtKrkk7Yy" />                <fieldset class="fieldset">
+                    <div class="field name">
+                        <label for="wishlist-name" class="label">
+                            <span><%- window.jQuery.mage.__('Wish List Name') %></span>
+                        </label>
+                        <div class="control">
+                            <input id="wishlist-name"
+                                   class="input-text"
+                                   data-role="prompt-field"
+                                   data-validate="{required:true}"
+                                   type="text"
+                                   name="name"
+                                   maxlength="255"
+                                   value="<%- data.name %>">
+                        </div>
+                    </div>
+                    <div class="field choice">
+                        <input id="wishlist-public"
+                               type="checkbox"
+                               name="visibility"<% if (data.isPublic) { %> checked=true<% } %>">
+                        <label for="wishlist-public" class="label">
+                            <span><%- window.jQuery.mage.__('Public Wish List') %></span>
+                        </label>
+                    </div>
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <button class="action save primary" type="submit" title="<%- window.jQuery.mage.__('Save') %>">
+                                <span><%- window.jQuery.mage.__('Save') %></span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <button class="action cancel <%- data.btnCloseClass %>" type="button" title="<%- window.jQuery.mage.__('Cancel') %>">
+                                <span><%- window.jQuery.mage.__('Cancel') %></span>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
     </div>
-    <script src="index.js"></script>
-  </body>
-</html>
+</script>
+<script id="split-btn-tmpl" type="text/x-magento-template">
+    <div class="split button wishlist">
+        <button type="button" data-post='<%- JSON.stringify(data.generalParams) %>' data-action="add-to-wishlist" class="label action split">
+            <span><%- data.buttonName %></span>
+        </button>
+        <button class="action toggle change"
+                title="<%- window.jQuery.mage.__('Add to:') %>"
+                type="button"
+                data-mage-init='{"dropdown":{}}'
+                data-toggle="dropdown"
+                data-trigger-keypress-button="true">
+            <span><%- window.jQuery.mage.__('Add to:') %></span>
+        </button>
+        <ul class="items" data-target="dropdown">
+            <% _.each(data.wishlists, function(item) { %>
+                <li class="item">
+                    <% if (item.newClass) { %>
+                        <span role="button"
+                              tabindex="0"
+                              class="action <%- item.newClass %>"
+                              data-action-keypress="true"
+                              data-post-new-wishlist='<%- JSON.stringify(item.params) %>'
+                              data-action="add-to-wishlist"
+                              title="<%- item.name %>">
+                            <span><%- item.name %></span>
+                        </span>
+                    <% } else { %>
+                        <span role="button"
+                              tabindex="0"
+                              data-action-keypress="true"
+                              data-post='<%- JSON.stringify(item.params) %>'
+                              data-action="add-to-wishlist"
+                              title="<%- item.name %>">
+                            <%- item.name %>
+                        </span>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</script>
+
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.agent='dvapptrian';n.queue=[];
+t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '492710597896511');
+fbq('track', 'PageView');
+
+
+
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="Facebook Pixel"
+src="https://www.facebook.com/tr?id=492710597896511&ev=PageView&noscript=1"
+/></noscript>
+
+<small class="copyright">
+<div class="copy-footer"><span>2019 Interceramic ©. Todos los derechos reservados.</span></div>
+<div class="footer-chat">
+<p style="cursor: pointer;" onclick="toggle_ChatVisibility(&#39;chatIcon&#39;); toggle_ChatVisibility(&#39;chatContainer&#39;);">¿Dudas? Chatea con nosotros <img style="float: right; margin-left: 1em;" src="./index_files/chat.png" width="28" height="28"></p>
+</div>
+<div class="footer-text">
+<p><a href="https://interceramic.com/mx/aviso-de-privacidad/" target="_self">Aviso de privacidad</a> | <a href="https://interceramic.com/mx/terminos-y-condiciones/" target="_self">Términos y condiciones</a> | <a href="https://tinyurl.com/y2b2uaqx" target="_self">Póliza de garantía</a></p>
+</div></small></div> <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e0bb0c4ad5","applicationID":"258664150","transactionName":"ZVBTNRRRDUFZVUVZX1wacAISWQxcF1VcQx9bW1UEHh8KXFxTSQ==","queueTime":0,"applicationTime":1380,"atts":"SRdQQ1xLHk8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<script type="text/javascript" src="chrome-extension://aefiepimkogajhddmhcekceihikjcabd/app/injected.min.js"></script><div class="modals-wrapper"><aside role="dialog" class="modal-popup popup-authentication
+               modal-slide
+               _inner-scroll" aria-describedby="modal-content-12" data-role="modal" data-type="popup" tabindex="0">
+<div data-role="focusable-start" tabindex="0"></div>
+<div class="modal-inner-wrap" data-role="focusable-scope">
+<header class="modal-header">
+
+<button class="action-close" data-role="closeBtn" type="button">
+<span>Cerrar</span>
+</button>
+</header>
+<div id="modal-content-12" class="modal-content" data-role="content"><div class="block-authentication" data-bind="afterRender: setModalElement, blockLoader: isLoading" style="">
+<div class="block block-new-customer" data-bind="attr: {&#39;data-label&#39;: $t(&#39;or&#39;)}" data-label="or">
+<div class="block-title">
+<strong id="block-new-customer-heading" role="heading" aria-level="2" data-bind="i18n: &#39;Checkout as a new customer&#39;">Checkout as a new customer</strong>
+</div>
+<div class="block-content" aria-labelledby="block-new-customer-heading">
+<p data-bind="i18n: &#39;Creating an account has many benefits:&#39;">Crear una cuenta tiene muchos beneficios:</p>
+<ul>
+<li data-bind="i18n: &#39;See order and shipping status&#39;">Ver el estado de una orden y su envío</li>
+<li data-bind="i18n: &#39;Track order history&#39;">Rastrear su historial de órdenes</li>
+<li data-bind="i18n: &#39;Check out faster&#39;">Ordenar más rápido</li>
+</ul>
+<div class="actions-toolbar">
+<div class="primary">
+<a class="action action-register primary" data-bind="attr: {href: registerUrl}" href="https://interceramic.com/mx/customer/account/create/">
+<span data-bind="i18n: &#39;Create an Account&#39;">Crear una Cuenta</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="block block-customer-login" data-bind="attr: {&#39;data-label&#39;: $t(&#39;or&#39;)}" data-label="or">
+<div class="block-title">
+<strong id="block-customer-login-heading" role="heading" aria-level="2" data-bind="i18n: &#39;Checkout using your account&#39;">Checkout using your account</strong>
+</div>
+<!-- ko foreach: getRegion('messages') -->
+<!-- ko template: getTemplate() -->
+<div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll">
+<!-- ko foreach: messageContainer.getErrorMessages() --><!--/ko-->
+<!-- ko foreach: messageContainer.getSuccessMessages() --><!--/ko-->
+</div>
+<!-- /ko -->
+<!--/ko-->
+<!-- ko foreach: getRegion('before') --><!-- /ko -->
+<div class="block-content" aria-labelledby="block-customer-login-heading">
+<form class="form form-login" method="post" data-bind="event: {submit: login }" id="login-form">
+<div class="fieldset login" data-bind="attr: {&#39;data-hasrequired&#39;: $t(&#39;* Required Fields&#39;)}" data-hasrequired="* Campos Obligatorios">
+<div class="field email required">
+<label class="label" for="customer-email"><span data-bind="i18n: &#39;Email Address&#39;">Email</span></label>
+<div class="control">
+<input name="username" id="customer-email" type="email" class="input-text" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true, &#39;validate-email&#39;:true}" autocomplete="off">
+</div>
+</div>
+<div class="field password required">
+<label for="pass" class="label"><span data-bind="i18n: &#39;Password&#39;">Contraseña</span></label>
+<div class="control">
+<input name="password" type="password" class="input-text" id="pass" data-bind="attr: {autocomplete: autocomplete}" data-validate="{required:true}" autocomplete="off">
+</div>
+</div>
+<!-- ko foreach: getRegion('additional-login-form-fields') --><!-- /ko -->
+<div class="actions-toolbar">
+<input name="context" type="hidden" value="checkout">
+<div class="primary">
+<button type="submit" class="action action-login secondary" name="send" id="send2">
+<span data-bind="i18n: &#39;Sign In&#39;">Ingresar</span>
+</button>
+</div>
+<div class="secondary">
+<a class="action" data-bind="attr: {href: forgotPasswordUrl}" href="https://interceramic.com/mx/customer/account/forgotpassword/">
+<span data-bind="i18n: &#39;Forgot Your Password?&#39;">¿Olvidó Su Contraseña?</span>
+</a>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div></div>
+
+</div>
+<div data-role="focusable-end" tabindex="0"></div>
+</aside><aside role="dialog" class="modal-popup popup-warranty
+               modal-slide
+               " aria-labelledby="modal-title-13" aria-describedby="modal-content-13" data-role="modal" data-type="popup" tabindex="0">
+<div data-role="focusable-start" tabindex="0"></div>
+<div class="modal-inner-wrap" data-role="focusable-scope">
+<header class="modal-header">
+
+<h5 id="modal-title-13" class="modal-title" data-role="title">
+
+Algunos productos requieren complementos
+
+
+</h5>
+
+<button class="action-close" data-role="closeBtn" type="button">
+<span>Cerrar</span>
+</button>
+</header>
+<div id="modal-content-13" class="modal-content" data-role="content"><div class="block-authentication" data-bind="afterRender: setModalElement, blockLoader: isLoading" style="">
+<div class="block block-new-customer" data-bind="attr: {&#39;data-label&#39;: $t(&#39;or&#39;)}" data-label="or">
+<div class="block-content" aria-labelledby="block-warranty-notice">
+<label data-bind="foreach: alertMessage"></label>
+<div class="actions-toolbar">
+<a class="action action-warranty-products" href="https://interceramic.com/mx/#" data-bind="click: function(){scrollDown()}">
+<span data-bind="i18n: &#39;VER PRODUCTOS&#39;">VER PRODUCTOS</span>
+</a>
+<a class="action action-continue" data-bind="attr: {href: checkoutUrl}" href="https://interceramic.com/mx/checkout/">
+<span data-bind="i18n: &#39;CONTINUAR&#39;">CONTINUAR</span>
+</a>
+</div>
+</div>
+</div>
+</div></div>
+
+</div>
+<div data-role="focusable-end" tabindex="0"></div>
+</aside></div></body></html>

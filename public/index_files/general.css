@@ -1,0 +1,92 @@
+.error-field{
+    border-color: #d20202;
+}
+
+.error-text{
+    color: #d20202;
+}
+
+.success-text{
+    color: #008c00;
+}
+
+.alert-message{
+    display: block; 
+    text-align: center; 
+    font-weight: bold;
+}
+
+.help-info{
+    font-style: italic;
+    font-size: 10px;
+}
+
+.content-internal-errors{
+    background-color: rgb(242, 222, 222);
+    margin: 10px -5px;
+    padding: 2px;
+}
+
+.internal-error{
+    color: #a94442;
+    padding: 0px 10px;
+}
+
+.spacing-zero{
+    padding: 0px;
+}
+
+.spacing-zero-top{
+    padding-top: 0px;
+}
+
+.spacing-five-top{
+    padding-top: 5px;
+}
+
+.spacing-zero-right{
+    padding-right: 0px;
+}
+
+.spacing-zero-left{
+    padding-left: 0px;
+}
+
+.parameter-margin-bottom{
+    margin-bottom: 5px;
+}
+
+.label-text-parameter{
+    padding: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.parameter-concept{
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+.font-11{
+    font-size: 11px;
+}
+
+.font-12{
+    font-size: 12px;
+}
+
+.font-13{
+    font-size: 13px;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+.margin-bottom-0{
+    margin-bottom: 0px;
+}
+
+.margin-top-15{
+    margin-top: 15px
+}

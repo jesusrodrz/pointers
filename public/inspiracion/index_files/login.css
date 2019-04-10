@@ -1,0 +1,22 @@
+
+.line{
+    width: 90px;
+    border-top: 1px solid #999;
+    position: relative;
+    top: 10px;
+    display: inline-block;
+}
+
+.legend{
+    margin: 0 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.container-legend{
+    margin: 5px 0;
+}
+
+.margin-bottom-5{
+    margin-bottom: 5px;
+}

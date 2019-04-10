@@ -10,6 +10,9 @@ body {
   width: 100%;
   display: block;
 }
+.header__img {
+  display: block;
+}
 .container {
   display: table;
   margin: 0 auto;
